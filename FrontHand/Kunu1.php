@@ -19,7 +19,7 @@ session_start();
  <body>
   <!-- HEADER -->
 
-  <?php include("functions/header.php"); ?>
+  <?php include("functions/header2.php"); ?>
 
     <!-- FORMULAIRE -->
 <div class="formulaire-signup">

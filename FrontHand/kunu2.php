@@ -34,7 +34,7 @@
         <div class="scroll-s-2">
             <div class="t-scroll">
                 <h1>Notre vision</h1> 
-                <p>Kunu est ne plateforme spécialisée dans le <b>naturisme</b> qui regroupera tout ce qu’il faut savoir sur le secteur de manière <b>simple</b> et <b>accessible</b>. <br> Notre objectif est de <b>guider</b> toutes les personnes qui souhaitent se lancer, mais aussi <b>informer</b> tous ceux qui sont déjà de fervents <b>« amoureux de la nature »</b></p>   
+                <p>Kunu est une plateforme spécialisée dans le <b>naturisme</b> qui regroupera tout ce qu’il faut savoir sur le secteur de manière <b>simple</b> et <b>accessible</b>. <br> Notre objectif est de <b>guider</b> toutes les personnes qui souhaitent se lancer, mais aussi <b>informer</b> tous ceux qui sont déjà de fervents <b>« amoureux de la nature »</b></p>   
             </div>
         </div>
     </div>

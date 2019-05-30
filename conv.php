@@ -21,12 +21,13 @@
 	
 	
 	$size = count($array)-1;
-	for ($i=0;$i<=$size;$i++){
-		echo ($array[$i][Envoi]);
-		echo " : ";
-		echo ($array[$i][Contenu]);
-		echo " <br/>";
+	if ($nom <> ''){
+		for ($i=0;$i<=$size;$i++){
+			echo ($array[$i][Envoi]);
+			echo " : ";
+			echo ($array[$i][Contenu]);
+			echo " <br/>";
+		}
 	}
-
 	mysqli_close($connexion);
 ?>

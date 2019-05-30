@@ -26,12 +26,12 @@ session_start();
 
    <!-- HEADER -->
 
-   <?php include("FrontHand/functions/header2.php"); ?>
+   <?php include("functions/header2.php"); ?>
 
 
 <div class="signuppage">
- <form action="KunuInscritEnvoi.php"  method="POST">
-  <div class="container">
+ <form action="../KunuInscritEnvoi.php"  method="POST">
+  <div class="signin-container">
     <h1>Sign in</h1>
     <p>Please fill in this form to connect.</p>
     <hr>
@@ -42,9 +42,9 @@ session_start();
     <label for="mdp"><b>Mot de passe</b></label>
     <input type="password" placeholder="Entrer Mot de passe" name="mdp" required><br/>
 
-    <div class="clearfix">
-      <button onclick="location.href = 'Kunu1.php';" type="button" class="cancelbtn">Cancel</button>
+    <div class="btn-signin">
       <button type="submit" class="signupbtn">Sign Up</button>
+      <button onclick="location.href = 'Kunu1.php';" type="button" class="cancelbtn">Cancel</button>
     </div>
   </div>
 </form>

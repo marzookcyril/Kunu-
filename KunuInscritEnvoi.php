@@ -25,10 +25,10 @@ session_start();
 		}
 	} else echo "Pas de resultat <br/>";
 	if ($i > 0) {
-		header('Location: Accueil.php');
+		header('Location: FrontHand/kunu2.php');
 		}
 		else{
-		header('Location: KunuDejaInscrit.php');
+		header('Location: FrontHand/KunuDejaInscrit.php');
 		}
 	
 	
