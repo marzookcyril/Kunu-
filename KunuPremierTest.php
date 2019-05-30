@@ -17,11 +17,6 @@ session_start();
 	$nom = $_POST["nom"];
 	$mdp = $_POST["mdp"];
 
-
-
-	echo "$pseudo,$nom,$prenom,$email,$date,$pays,$adresse,$postal,$mdp";
-
-
 	// Connexion via mysqli procedural
 	$connexion = mysqli_connect($host,$login, $password, $bdd);
 	
@@ -34,6 +29,6 @@ session_start();
 	
 	// Deconnexion
 	mysqli_close($connexion);
-	echo "La requete a été executée";
+	header('Location:FrontHand/kunu2.php');
 
 ?>

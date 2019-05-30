@@ -41,7 +41,7 @@
 
     <!-- ACTUALITÉS -->
 
-    <div class="actualités">
+    <div class="actualités" id="actualités">
         <div class="news-titre">
                 <h1>Actualités</h1>
         </div>

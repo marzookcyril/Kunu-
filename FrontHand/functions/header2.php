@@ -7,12 +7,7 @@
             <div class="line"></div>
             <div class="line"></div>
         </div>
-        <ul class="nav-links">
-            <li><a href="kunu2.php#actualités">Actualités</a></li>
-            <li><a href="kunu2.php#calendrier">Calendrier</a></li>
-            <li><a href="#boutique">Boutique</a></li>
-            <li><a href="kunu2.php#contact">Contact</a></li>
-        </ul>
+
 </nav>
 
 <script src="app.js"></script>
