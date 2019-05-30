@@ -79,7 +79,7 @@
                 <hr>
 
                 <div class="post-preview">
-                <a href="post.html">
+                <a href="onaturel.php">
                     <img src="onaturel.jpg"/>
                     <h2 class="post-title">
                     Être « O’naturel » : pas une affaire de Parisiens
