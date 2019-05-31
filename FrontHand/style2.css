@@ -229,6 +229,10 @@ nav{
     font-family: "Work sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+.t-scroll p{
+    font-size: 20px;
+}
+
 @keyframes opacity{
     0% {opacity: 0;}
     100% {opacity: 1;}
