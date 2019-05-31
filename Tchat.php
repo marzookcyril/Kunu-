@@ -10,13 +10,11 @@ session_start();
 	$message = $_POST["message"];
 	
 	$connexion = mysqli_connect($host,$login, $password, $bdd);
-
-	if $recev <> ''{
+	if ($recev <> ""){
 	$requete = "INSERT INTO KunuMessage VALUES ('$envoi','$recev','$message','');";
 
 
 	$exec = mysqli_query($connexion, $requete);
-
 	}
 	mysqli_close($connexion);
 	header('Location: Accueil.php');

@@ -23,11 +23,12 @@
 	$size = count($array)-1;
 	if ($nom <> ''){
 		for ($i=0;$i<=$size;$i++){
-			echo ($array[$i][Envoi]);
-			echo " : ";
-			echo ($array[$i][Contenu]);
-			echo " <br/>";
-		}
+				if ( $compte == $array[$i][Envoi] ){
+					echo ("<div class ='moi'>".$array[$i][Contenu]."</div>");
+				} else {
+					echo ("<div class ='toi'>".$array[$i][Contenu]."</div>");
+				}		
+			}
 	}
 	mysqli_close($connexion);
 ?>

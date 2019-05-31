@@ -1,12 +1,13 @@
 <?php
 session_start();
-?>
+		$pseudo = $_SESSION['pseudo'];
+?>	
 <!DOCTYPE html>
 <html>
  <head>
   <title>Kunu</title>
   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
-	<meta http-equiv="content-language" content="FR"/>
+<meta http-equiv="content-language" content="FR"/>
 	<script type="text/javascript" src="ajax.js"></script>
 	<link rel="stylesheet" href="FrontHand/style2.css"/>
 	<meta charset="UTF-8">
@@ -23,54 +24,63 @@ session_start();
 
  </head>
 
- <body class="tchat-body">
+ <body>
+
  <?php include("FrontHand/functions/header3.php"); ?>
 
- <div class="tchat">
-    	<h4 class="select-discuss"> Selectionner une discussion : </h4> 
-	<select id="nom" onchange="envoi()" class="selectenvoie"> 
-	<?php 
-		
+ <form action="modif.php"  method="POST" class="form-info">
+  <div class="info">
+  
+   <h1>Vos informations</h1>
+<?php
+
 	$host     = "mysql.etude.cergy.eisti.fr";
 	$login    = "crocebapti";
 	$password = "bWW3rBdJNO";
 	$bdd      = "crocebapti";
-
+	
 	$connexion = mysqli_connect($host,$login, $password, $bdd);
 	
+	$pseudo = $_SESSION['pseudo'];
+	$info = "SELECT * FROM KunuInscrit WHERE pseudo='$pseudo';";
+	$exec = mysqli_query($connexion, $info);
+	$array = array();
+	while($row = mysqli_fetch_assoc($exec)){
+    $array[] = $row;
+		}
 	
-		$envoi = $_SESSION["pseudo"];
-		$inscrit = "SELECT pseudo FROM KunuInscrit WHERE pseudo <>'$envoi';";
-		$exec = mysqli_query($connexion, $inscrit);
-		$array = array();
-		while($row = mysqli_fetch_assoc($exec)){
-		$array[] = $row;
-		}
-		echo "<option value =''> Choisissez un pseudo </option>";
-		for($i=0;$i<=count($array)-1;$i++){
-			echo "<option value='".$array[$i][pseudo]."'>".$array[$i][pseudo]."</option>";
-		}
-			mysqli_close($connexion);
 
-	?>
-    </select> 
-    <br/>
-
-    			<div id="discussion" class="discussion" onmouseover="envoi()"> </div>
+	echo "<br/>";
+	echo "Votre pseudo : ".$array[0][pseudo]."<br/>";
+	
+	echo "Votre email : ".$array[0][email]."<br/>";
+	
+	echo "Votre nom : ".$array[0][nom]."<br/>";
     
+	echo "Votre prenom : ".$array[0][prenom]."<br/>";
+	
+	echo "Votre date de naissance  : ".$array[0][date_naissance]."<br/>";
+
+	echo "Votre pays : ".$array[0][pays]."<br/>";
+	
+	echo "Votre adresse : ".$array[0][adresse]."<br/>";
+	
+	echo "Votre code postal : ".$array[0][code_postal]."<br/>";
+	
+	echo "Votre mot de passe  : ".$array[0][mdp]."<br/>";
+		mysqli_close($connexion);
+
+?>   
 
 
-					<form action="refresh" >
-						<div class="messagediv">
-							<label for="message" class="votremsg"> <b> Votre Message</b></label> 
-							<textarea type="text" placeholder="Entrer un message (pas de ponctuation ni d'accent)" id="message" rows = "5" size="75" maxlength="255"required style="resize: none;" class="textarea-msg"></textarea>
-							<div class="btnsenddiv">
-								<button type="button" onclick="envoi2();refresh()" class="sendbtn">Envoyer</button>
-							</div>
-						</div>
-					</form>
-		</div>
+    <div class="button">
+      <button type="button" onclick="location.href = 'FrontHand/kunu2.php';" class="cancelbtn">Retour</button>
+      <button type="submit" class="signupbtn">Modifier mes infos</button>
+    </div>
+  </div>
+</form>
 
 
+<?php include("FrontHand/functions/footer2.php"); ?>
 </body>
 </html>
