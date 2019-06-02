@@ -1,0 +1,135 @@
+\documentclass[a4paper]{report}
+
+% Utilisation des diffÃƒÂ©rents paquets :
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{hhline}
+\usepackage{multirow}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{graphicx}
+\usepackage{mathtools, bm}
+\usepackage{amssymb, bm}
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{geometry} 
+\usepackage{caption}
+\usepackage{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage{inconsolata}
+\usepackage{amsfonts}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{stmaryrd}
+
+% Informations sur le document :
+\title{Développement web : Kunu }
+\author{\sc{CROCE Baptiste, JACQUELIN Anthony, MARZOOK Cyril}}
+\date{\emph{Lundi 10 juin 2019}}
+
+% Personnalisation de la numÃƒÂ©rotation des sections et sous-sections
+\renewcommand\thesection {\Roman{section}}
+
+\setcounter{section}{0}
+
+
+% Quelques constantes : 
+\makeatletter
+  \let\thetitle\@title
+  \let\theauthor\@author
+  \let\thedate\@date
+\makeatother
+
+
+
+% Personnalisation des en-tÃƒÂªtes et pieds de page :
+\pagestyle{fancy}
+\fancyhead[L]{\fontsize{13}{22} \selectfont \thetitle}
+\fancyhead[R]{\includegraphics[scale=0.04]{logo.png}}
+\fancyhead[C]{}
+    \renewcommand{\footrulewidth}{0.4pt}
+\fancyfoot[L]{\rightmark}
+\fancyfoot[R]{\thepage /\pageref{LastPage}}
+\fancyfoot[C]{}
+
+
+
+\newtcblisting[auto counter]{sexylisting}[2][]{sharp corners, 
+    fonttitle=\bfseries, colframe=gray, listing only, 
+    listing options={basicstyle=\ttfamily,language=java}, 
+    title=Listing \thetcbcounter: #2, #1}
+
+
+% DÃ©but du document
+\begin{document}
+    \maketitle
+      \tableofcontents
+        \newpage
+	\
+	\
+	\
+	\
+	\
+ \section{Introduction}
+ 
+ 	Au cours de ce projet, nous avons dû mettre en place un site complet nommé Kunu.
+	\\
+				//Photo bienvenue sur Kunu //
+				\\
+Le principe de ce site? Réunir tout ce qui peux être important/intéressant a savoir lorsque l'on s'intéresse au naturisme. Et ce, autant pour la partie intéraction entre adepte de ce choix de vie, qu?information sur le sujet ou création/réservation de séjours. Afin de mener à bien ce projet, nous nous sommes grandement intéressé aux cahiers des charges fournit, mais plus précisément aux annexes, ainsi qu'au site déjà existant. Car pour retranscrire un site, qui reflète correctement ce que l'on veux, il faut d'abord comprendre les enjeux et la vision du demandeur. Ainsi nous avons décidé de réaliser un site assez épuré ou la majorité des fonctionnalités se trouvent sur la page d'accueil, accessible depuis un bandeau de haut de page. 
+Pour réaliser tout cela, nous avons donc utiliser plusieurs technologies, sur lesquelles on reviendra au moment ou parle de leurs utilisations, parmi elle on peux compter html, css, js, php, dom, ajax et mysql.
+ \newpage
+	\
+	\
+	\
+	\
+	\
+	\
+\section{Présentation du projet}
+ \newpage
+	\
+	\
+	\
+	\
+	\
+	\
+
+
+\section{Choix technologiques}
+ \newpage
+	\
+	\
+	\
+	\
+	\
+	\
+
+\section{Choix de design}
+ \newpage
+	\
+	\
+	\
+	\
+	\
+	\
+\section{Descriptions des pages}
+ \newpage
+	\
+	\
+	\
+	\
+	\
+	\
+\section{Répartitions des tâches}
+ \newpage
+	\
+	\
+	\
+	\
+	\
+	\
+\section{Bilan et perspectives}
+
+
+ \end{document}

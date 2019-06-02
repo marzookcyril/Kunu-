@@ -1,0 +1,8 @@
+\select@language {french}
+\contentsline {section}{\numberline {I}Introduction}{2}{section.0.1}
+\contentsline {section}{\numberline {II}Présentation du projet}{3}{section.0.2}
+\contentsline {section}{\numberline {III}Choix technologiques}{4}{section.0.3}
+\contentsline {section}{\numberline {IV}Choix de design}{5}{section.0.4}
+\contentsline {section}{\numberline {V}Descriptions des pages}{6}{section.0.5}
+\contentsline {section}{\numberline {VI}Répartitions des tâches}{7}{section.0.6}
+\contentsline {section}{\numberline {VII}Bilan et perspectives}{8}{section.0.7}
