@@ -63,7 +63,7 @@ session_start();
 					<form action="refresh" >
 						<div class="messagediv">
 							<label for="message" class="votremsg"> <b> Votre Message</b></label> 
-							<textarea type="text" placeholder="Entrer un message (pas de ponctuation ni d'accent)" id="message" rows = "5" size="75" maxlength="255"required style="resize: none;" class="textarea-msg"></textarea>
+							<textarea autofocus type="text" placeholder="Entrer un message" id="message" rows = "5" size="75" maxlength="255"required style="resize: none;" class="textarea-msg"></textarea>
 							<div class="btnsenddiv">
 								<button type="button" onclick="envoi2();refresh()" class="sendbtn">Envoyer</button>
 							</div>
