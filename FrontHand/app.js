@@ -8,3 +8,11 @@ hamburger.addEventListener("click", () => {
     //     link.classList.toggle("fade");
     // });
 });
+
+navLinks.addEventListener("click", () => {
+    navLinks.classList.toggle("open");
+});
+
+links.addEventListener("click", () => {
+    navLinks.classList.toggle("open");
+});

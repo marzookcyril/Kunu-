@@ -15,7 +15,8 @@ session_start();
  Selectionner un sejour : 
 	<select id="titre" onchange="envoi()"> 
 	<?php 
-		
+		session_start();
+
 	$host     = "mysql.etude.cergy.eisti.fr";
 	$login    = "crocebapti";
 	$password = "bWW3rBdJNO";
@@ -36,13 +37,36 @@ session_start();
 			echo "<option value='".$array[$i][titre]."'>".$array[$i][titre]."</option>";
 		}
 			mysqli_close($connexion);
-
 	?>
     </select> 
     <br/>
     <div id="description"> </div>
  
- 
+	
+ <form action="valid.php" method="POST">
+  <div class="container">
+		
+		 <label for="titre"><b>Titre </b></label>
+    <input type="text" placeholder="Copier le titre" name="titre" required>
+    
+      <label for="date"><b> Date de départ</b></label>
+    <input type="date" placeholder="" name="date" required>
+    
+    
+    <label for="dure"><b>Durée du séjour </b></label>
+    <input type="text" autofocus placeholder="Nombre de jours" name="dure" required><br/>
+
+  <label for="nbr"><b> Nombre de personnes</b></label>
+    <input type="text" placeholder="" name="nbr" required><br/>
+
+
+    <br/>
+
+    <div class="clearfix">
+      <button type="submit" class="signupbtn">Valider</button>
+    </div>
+  </div>
+</form>
  
  
  
