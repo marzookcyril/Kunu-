@@ -80,7 +80,58 @@ session_start();
   </div>
 </form>
 
+<?php
+
+	$host     = "mysql.etude.cergy.eisti.fr";
+	$login    = "crocebapti";
+	$password = "bWW3rBdJNO";
+	$bdd      = "crocebapti";
+	
+	$connexion = mysqli_connect($host,$login, $password, $bdd);
+	
+	$pseudo = $_SESSION['pseudo'];
+	
+	$info = "SELECT * FROM KunuReservation WHERE pseudo='$pseudo';";
+	$exec = mysqli_query($connexion, $info);
+	$array = array();
+	while($row = mysqli_fetch_assoc($exec)){
+    $array[] = $row;
+		}
+	
+	if (sizeof($array) <> 0) {
+		echo " <h1> Vos reservations </h1>";
+		for ($i=0;$i<= sizeof($array)-1;$i++){
+			
+			$infoo = "SELECT prix FROM KunuSejour WHERE titre='$array[$i]['titre']';";
+			$exec1 = mysqli_query($connexion, $infoo);
+			
+		
+			echo " <h3> Sejour  </h3>";
+			echo "Titre du sejour : ";
+			echo $array[$i]['titre']."<br/>";
+			echo "Debut : ";
+			echo $array[$i]['debut']."<br/>";
+			echo "Nombre de jours : ";
+			echo $array[$i]['fin']."<br/>";
+			echo "Nombre de personne : ";
+			echo $array[$i]['nombre']."<br/>";
+			echo " Prix : " ;
+			echo $exec1 ;
+
+	}
+	
+		}
+
+	
+		
+	
+
+
+
+?>
+
 
 <?php include("FrontHand/functions/footer2.php"); ?>
+
 </body>
 </html>
