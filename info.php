@@ -102,29 +102,61 @@ session_start();
 	if (sizeof($array) <> 0) {
 		echo "<div class='reservations'>";
 		echo " <h1> Vos reservations </h1>";
-		for ($i=0;$i<= sizeof($array)-1;$i++){
+		for ($i=1;$i<= sizeof($array);$i++){
 			
-			$infoo = "SELECT prix FROM KunuSejour WHERE titre='$array[$i]['titre']';";
-			$exec1 = mysqli_query($connexion, $infoo);
 			
 		
-			echo " <h3> Sejour  </h3>";
+			echo " <h3> Reservation $i  </h3>";
 			echo "Titre du sejour : ";
-			echo $array[$i]['titre']."<br/>";
+			echo $array[$i-1]['titre']."<br/>";
 			echo "Debut : ";
-			echo $array[$i]['debut']."<br/>";
+			echo $array[$i-1]['debut']."<br/>";
 			echo "Nombre de jours : ";
-			echo $array[$i]['fin']."<br/>";
+			echo $array[$i-1]['fin']."<br/>";
 			echo "Nombre de personne : ";
-			echo $array[$i]['nombre']."<br/>";
+			echo $array[$i-1]['nombre']."<br/>";
 			echo " Prix : " ;
-			echo $exec1 ;
-			if ($i <> sizeof($array)-1){
+			echo $array[$i-1]['prix']." euros <br/>" ;
+			if ($i <> sizeof($array)){
 				echo "<hr class='sejourbarre'>";
 			}
 	}
 	echo "</div>";
 		}
+
+	$info = "SELECT * FROM KunuSejour WHERE pseudo='$pseudo';";
+	$exec = mysqli_query($connexion, $info);
+	$array = array();
+	while($row = mysqli_fetch_assoc($exec)){
+		$array[] = $row;
+	}
+
+	if (sizeof($array) <> 0) {
+		echo "<div class='reservations'>";
+		echo " <h1> Vos sejours crees </h1>";
+		for ($i=1;$i<= sizeof($array);$i++){
+			echo " <h3> Sejour $i </h3>";
+			echo "Titre du sejour : ";
+			echo $array[$i-1]['titre']."<br/>";
+			echo "Description : ";
+			echo $array[$i-1]['description']."<br/>";
+			echo "code postal : ";
+			echo $array[$i-1]['code_postal']."<br/>";
+			echo "Adresse : ";
+			echo $array[$i-1]['adresse']."<br/>";
+			echo "Pays : ";
+			echo $array[$i-1]['pays']."<br/>";
+			echo " Prix par jour, par personne : " ;
+			echo $array[$i-1]['prix']." euros <br/>" ;
+			if ($i <> sizeof($array)){
+				echo "<hr class='sejourbarre'>";
+			}
+	}
+	
+		echo "</div>";
+
+	}
+
 
 ?>
 
