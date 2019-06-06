@@ -57,9 +57,11 @@ session_start();
 			echo " <h3> Article $i  </h3>";
 			echo "Nom du produit : ";
 			echo $array[$i-1]['nom']."<br/>";
-			echo "Prix du produit : ";
-			echo $array[$i-1]['prix']." euros <br/>" ;
-			$p = $p + $array[$i-1]['prix'];
+			echo "Quantité : ";
+			echo $array[$i-1]['quantite']."<br/>";
+			echo "Prix  : ";
+			echo $array[$i-1]['prix']*$array[$i-1]['quantite']." euros <br/>" ;
+			$p = $p + $array[$i-1]['prix']*$array[$i-1]['quantite'];
 			if ($i <> sizeof($array)){
 				echo "<hr class='sejourbarre'>";
 			}
