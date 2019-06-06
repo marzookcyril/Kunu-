@@ -13,4 +13,4 @@
                     <a href="#" class="">FAQ</a>
             </div>
         </div>
-    </div>
+</div>

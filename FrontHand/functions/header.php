@@ -13,6 +13,7 @@
             <li><a href="#boutique">Boutique</a></li>
             <li><a href="kunu2.php#contact">Contact</a></li>
             <li><a href="../Accueil.php">Tchat</a></li>
+            <li><a href="../info.php">Mes infos</a></li>
         </ul>
 </nav>
 

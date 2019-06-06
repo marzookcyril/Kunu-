@@ -77,8 +77,9 @@ session_start();
       <button type="button" onclick="location.href = 'FrontHand/kunu2.php';" class="cancelbtn">Retour</button>
       <button type="submit" class="signupbtn">Modifier mes infos</button>
     </div>
-  </div>
+	</div>
 </form>
+
 
 <?php
 
@@ -99,6 +100,7 @@ session_start();
 		}
 	
 	if (sizeof($array) <> 0) {
+		echo "<div class='reservations'>";
 		echo " <h1> Vos reservations </h1>";
 		for ($i=0;$i<= sizeof($array)-1;$i++){
 			
@@ -117,18 +119,15 @@ session_start();
 			echo $array[$i]['nombre']."<br/>";
 			echo " Prix : " ;
 			echo $exec1 ;
-
+			if ($i <> sizeof($array)-1){
+				echo "<hr class='sejourbarre'>";
+			}
 	}
-	
+	echo "</div>";
 		}
 
-	
-		
-	
-
-
-
 ?>
+
 
 
 <?php include("FrontHand/functions/footer2.php"); ?>
