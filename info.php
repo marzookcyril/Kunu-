@@ -101,12 +101,12 @@ session_start();
 	
 	if (sizeof($array) <> 0) {
 		echo "<div class='reservations'>";
-		echo " <h1> Vos reservations </h1>";
+		echo " <h1> Vos réservations </h1>";
 		for ($i=1;$i<= sizeof($array);$i++){
 			
 			
 		
-			echo " <h3> Reservation $i  </h3>";
+			echo " <h3> Réservation $i  </h3>";
 			echo "Titre du sejour : ";
 			echo $array[$i-1]['titre']."<br/>";
 			echo "Debut : ";
@@ -133,7 +133,7 @@ session_start();
 
 	if (sizeof($array) <> 0) {
 		echo "<div class='reservations'>";
-		echo " <h1> Vos sejours crees </h1>";
+		echo " <h1> Vos sejours créés </h1>";
 		for ($i=1;$i<= sizeof($array);$i++){
 			echo " <h3> Sejour $i </h3>";
 			echo "Titre du sejour : ";
