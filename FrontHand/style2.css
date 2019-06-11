@@ -252,8 +252,8 @@ nav{
     height: 30vh;
     background: #252E36;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-self: flex-end;
+    margin-top: auto;
 
 
 }
@@ -739,8 +739,24 @@ input[type=submit]:hover {
     flex-direction: column; 
     align-items: center;
     justify-content: center;
+    width: 50vh;
+    height: 50vh;
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-bottom: auto;
     
     
+}
+
+.descrip-prod{
+    display: flex;
+    width: 50vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+
 }
 
 .container-2{
@@ -776,6 +792,6 @@ input[type=submit]:hover {
 }
 
 .section-creer{
-    wi
+    
 }
 

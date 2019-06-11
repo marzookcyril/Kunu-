@@ -64,7 +64,7 @@ session_start();
           ?>
               </select>
               <br/>
-              <div id="description"> </div>
+              <div id="description" class="descrip-prod"> </div>
           
 
           <form action="valid.php" method="POST">

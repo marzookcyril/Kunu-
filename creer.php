@@ -50,7 +50,7 @@ session_start();
     <input type="text"  name="pays" required><br/>
 
 	<button type="submit">Créer</button>
-  </div>
+</div>
 	
   </body>
 </html>
