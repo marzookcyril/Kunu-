@@ -14,6 +14,6 @@
 
     <button onclick="Goto()">Voir sur la carte</button>
 
-<div id="map" style ="width: 600px ; height : 300px ; border-radius : 25px"></div>
+<div id="map" style ="width: 600px ; height : 300px ; border-radius : 25px; z-index:1;"></div>
 </body>
 </html>

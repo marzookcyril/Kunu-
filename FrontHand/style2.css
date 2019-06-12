@@ -729,9 +729,12 @@ input[type=submit]:hover {
 .section-reserver{
     background: white;
     width: 100%;
-    height: 100vh;
+    height: 200vh;
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .container-reserver{
@@ -740,11 +743,7 @@ input[type=submit]:hover {
     align-items: center;
     justify-content: center;
     width: 50vh;
-    height: 50vh;
-    margin-bottom: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-    
+    height: 50vh;    
     
 }
 
@@ -756,6 +755,7 @@ input[type=submit]:hover {
     justify-content: center;
     margin-right: auto;
     margin-left: auto;
+
 
 }
 

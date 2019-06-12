@@ -129,55 +129,7 @@ session_start();
         <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Europe%2FParis&amp;src=c2t5emluZ2FtZUBnbWFpbC5jb20&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=NTE5cm1naTRlNGF0bHR2dTY2ajBnbms1ZjhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZnIuZnJlbmNoI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23039BE5&amp;color=%237986CB&amp;color=%23616161&amp;color=%23009688" style="border:none; margin:0;" width="100%" height="90%" frameborder="0" scrolling="no" ></iframe>
     </div>
 
-    <!-- BOUTIQUE -->
-    <div class="section4" id="boutique">
-        
-        <div class="titre-boutique">
-            <h1>Boutique en ligne.</h1>
-        </div>
 
-        <div class="fiches-produit-l1">
-            <div class="fiche-produit-1">
-                <h3>Titre Produit.</h3>
-                <img src="" alt=""/>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, commodi dolor modi amet, veritatis minima earum quas vero ut reiciendis laboriosam molestiae temporibus similique officia officiis dolorem! Dolore, natus dolorum.</p>
-
-            </div>
-
-            <div class="fiche-produit-1">
-                <h3>Titre Produit.</h3>
-                <img src="" alt=""/>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, commodi dolor modi amet, veritatis minima earum quas vero ut reiciendis laboriosam molestiae temporibus similique officia officiis dolorem! Dolore, natus dolorum.</p>
-            </div>
-
-            <div class="fiche-produit-1">
-                <h3>Titre Produit.</h3>
-                <img src="" alt=""/>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, commodi dolor modi amet, veritatis minima earum quas vero ut reiciendis laboriosam molestiae temporibus similique officia officiis dolorem! Dolore, natus dolorum.</p>
-            </div>            
-        </div>  
-        
-        <div class="fiches-produit-l2">
-            <div class="fiche-produit-2">
-                <h3>Titre Produit.</h3>
-                <img src="" alt=""/>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, commodi dolor modi amet, veritatis minima earum quas vero ut reiciendis laboriosam molestiae temporibus similique officia officiis dolorem! Dolore, natus dolorum.</p>
-            </div>
-
-            <div class="fiche-produit-2">
-                <h3>Titre Produit.</h3>
-                <img src="" alt=""/>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, commodi dolor modi amet, veritatis minima earum quas vero ut reiciendis laboriosam molestiae temporibus similique officia officiis dolorem! Dolore, natus dolorum.</p>
-            </div>
-
-            <div class="fiche-produit-2">
-                <h3>Titre Produit.</h3>
-                <img src="" alt=""/>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, commodi dolor modi amet, veritatis minima earum quas vero ut reiciendis laboriosam molestiae temporibus similique officia officiis dolorem! Dolore, natus dolorum.</p>
-            </div>            
-        </div>   
-        
-    </div>
 
     <!-- CONTACT -->
     <div class="contact" id="contact">
