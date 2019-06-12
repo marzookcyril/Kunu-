@@ -63,7 +63,7 @@ session_start();
 
 
           <div class="clearfix">
-            <button type="button" class="cancelbtn">Cancel</button>
+            <button type="button" class="signupbtn">Cancel</button>
             <button type="submit" class="signupbtn">Sign Up</button>
             <button onclick="location.href = 'KunuDejaInscrit.php';" type="button" class="Inscrit">Deja Inscrit?</button>
           </div>

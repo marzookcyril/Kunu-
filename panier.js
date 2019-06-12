@@ -4,7 +4,7 @@ function envoi(e) {
 	//alert("it works 2 ");
 	var prix = titre.getAttribute("name");
 	var nom  = titre.innerHTML; 
-	alert(nom);
+	//alert(nom);
 	var reponse;
 	//alert(e);
 	//alert(prix);

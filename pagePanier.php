@@ -30,7 +30,7 @@ $pseudo = $_SESSION['pseudo'];
 
   <div class="info">
   
-   <h1>Votre panier</h1>
+
 <?php
 
 $host     = "mysql.etude.cergy.eisti.fr";
@@ -57,15 +57,14 @@ for ($i=1;$i<= sizeof($array);$i++){
 echo " <h3> Article $i  </h3>";
 echo "Nom du produit : ";
 echo $array[$i-1]['nom']."<br/>";
-if (substr($array[$i-1]['nom'],1,1) == "T"){
-echo "<img src='img/the.png' width=90>";
-}
 if (substr($array[$i-1]['nom'],1,1) == "L"){
 echo "<img src='img/livre.jpg' width=70 >";
-}
+}else {
 if (substr($array[$i-1]['nom'],1,1) == "C"){
 echo "<img src='img/creme.jpg' width=70 >";
-}
+}else {
+echo "<img src='img/the.png' width=90>";
+}}
 
 echo "Quantité : ";
 echo $array[$i-1]['quantite']."<br/>";
@@ -77,7 +76,35 @@ echo "<hr class='sejourbarre'>";
 }
 }
 echo " <h2> Prix total : ".$p. " euros "."</h2>";
+echo("<button class='addpanier' onclick=\"location.href='suppr.php'\">Vider le panier</button>");
 echo "</div>";
+} else {
+echo "<br/>";
+echo "<br/>";
+echo "<br/>";
+echo " <h3> Votre panier est vide </h3>";
+echo "<br/>";
+echo "<br/>";
+echo "<br/>";
+echo "<br/>";
+echo "<br/>";
+echo "<br/>";
+echo "<br/>";
+echo "<br/>";
+echo "<br/>";
+echo "<br/>";
+echo "<br/>";
+echo "<br/>";
+echo "<br/>";
+echo "<br/>";
+echo "<br/>";
+echo "<br/>";
+echo "<br/>";
+echo "<br/>";
+echo "<br/>";
+echo "<br/>";
+
+
 }
 
 mysqli_close($connexion);

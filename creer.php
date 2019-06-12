@@ -27,7 +27,12 @@ session_start();
 
  </head>
 
+ <?php include("FrontHand/functions/header3.php"); ?>
+
  <body>
+
+ <div class="creervoyage">
+
  <div class="section-creer">
 	<form action="ajouter.php"  method="POST">
  
@@ -49,8 +54,11 @@ session_start();
       <label for="pays"><b> Pays</b></label>
     <input type="text"  name="pays" required><br/>
 
-	<button type="submit">Créer</button>
+	<button type="submit" class="addpanier">Créer</button>
 </div>
 	
+</div>
+
+<?php include("FrontHand/functions/footer.php"); ?>
   </body>
 </html>
