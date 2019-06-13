@@ -4,5 +4,18 @@
 \contentsline {section}{\numberline {III}Choix technologiques}{4}{section.0.3}
 \contentsline {section}{\numberline {IV}Choix de design}{5}{section.0.4}
 \contentsline {section}{\numberline {V}Descriptions des pages}{6}{section.0.5}
-\contentsline {section}{\numberline {VI}Répartitions des tâches}{7}{section.0.6}
-\contentsline {section}{\numberline {VII}Bilan et perspectives}{8}{section.0.7}
+\contentsline {subsection}{\numberline {V.1}Accueil}{6}{subsection.0.5.1}
+\contentsline {subsection}{\numberline {V.2}Actualités}{8}{subsection.0.5.2}
+\contentsline {subsection}{\numberline {V.3}Calendrier}{9}{subsection.0.5.3}
+\contentsline {subsection}{\numberline {V.4}Boutique}{10}{subsection.0.5.4}
+\contentsline {subsection}{\numberline {V.5}Panier}{11}{subsection.0.5.5}
+\contentsline {subsection}{\numberline {V.6}Contact}{12}{subsection.0.5.6}
+\contentsline {subsection}{\numberline {V.7}Voyager}{13}{subsection.0.5.7}
+\contentsline {subsubsection}{Créer un séjour}{13}{section*.2}
+\contentsline {subsubsection}{Réserver un séjour}{14}{section*.3}
+\contentsline {subsection}{\numberline {V.8}Mon compte}{16}{subsection.0.5.8}
+\contentsline {subsubsection}{Mes infos}{16}{section*.4}
+\contentsline {subsubsection}{Deconnexion}{16}{section*.5}
+\contentsline {subsection}{\numberline {V.9}Tchat}{17}{subsection.0.5.9}
+\contentsline {section}{\numberline {VI}Répartitions des tâches}{18}{section.0.6}
+\contentsline {section}{\numberline {VII}Bilan et perspectives}{19}{section.0.7}
