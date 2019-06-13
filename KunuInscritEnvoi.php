@@ -8,7 +8,7 @@ session_start();
 
 	$_SESSION["pseudo"] = $_POST["pseudo"];
 	$mdp = $_POST["mdp"];
-
+	$mdpp = md5($mdp);
 	// Connexion via mysqli procedural
 	$connexion = mysqli_connect($host,$login, $password, $bdd);
 	
@@ -19,7 +19,7 @@ session_start();
 	if (mysqli_num_rows($exec) > 0) {
 		// On recupere chaque ligne dans un tab associatif
 		while ($ligne = mysqli_fetch_assoc($exec)) {
-			if ($ligne["pseudo"]  == $_POST["pseudo"] and $ligne["mdp"] == $_POST["mdp"] ){
+			if ($ligne["pseudo"]  == $_POST["pseudo"] and $ligne["mdp"] == $mdpp ){
 				$i = $i+1;
 			}
 		}

@@ -40,7 +40,8 @@ session_start();
 	}
 	if ($mdp <> "") {
 		echo "je passe dans le if";
-		$requete = "UPDATE KunuInscrit SET mdp = '$mdp' WHERE pseudo ='$pseudo';";
+		$mdpp = md5($mdp);
+		$requete = "UPDATE KunuInscrit SET mdp = '$mdpp' WHERE pseudo ='$pseudo';";
 		$exec = mysqli_query($connexion, $requete);
 	}
 	

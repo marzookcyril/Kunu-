@@ -16,11 +16,11 @@ session_start();
 	$prenom = $_POST["prenom"];
 	$nom = $_POST["nom"];
 	$mdp = $_POST["mdp"];
-
+	$mdpp = md5($mdp);
 	// Connexion via mysqli procedural
 	$connexion = mysqli_connect($host,$login, $password, $bdd);
 	
-	$requete = "INSERT INTO KunuInscrit VALUES('$pseudo','$nom','$prenom','$email','$date','$pays','$adresse','$postal','$mdp');";
+	$requete = "INSERT INTO KunuInscrit VALUES('$pseudo','$nom','$prenom','$email','$date','$pays','$adresse','$postal','$mdpp');";
 
 	
 	// Execution d'une requete
