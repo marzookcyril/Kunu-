@@ -67,7 +67,6 @@ session_start();
 	
 	echo "Votre code postal : ".$array[0][code_postal]."<br/>";
 	
-	echo "Votre mot de passe  : ".$array[0][mdp]."<br/>";
 	echo "</div>";
 	
 	mysqli_close($connexion);
