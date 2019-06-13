@@ -74,9 +74,11 @@
  \section{Introduction}
  
  	Au cours de ce projet, nous avons dû mettre en place un site complet nommé Kunu.
-	\\
-				//Photo bienvenue sur Kunu //
-				\\
+\\
+\begin{center}
+ \includegraphics[scale=0.2]{img/Accueil.png}
+\end{center}
+\\
 Le principe de ce site? Réunir tout ce qui peux être important/intéressant a savoir lorsque l'on s'intéresse au naturisme. Et ce, autant pour la partie intéraction entre adepte de ce choix de vie, qu?information sur le sujet ou création/réservation de séjours. Afin de mener à bien ce projet, nous nous sommes grandement intéressé aux cahiers des charges fournit, mais plus précisément aux annexes, ainsi qu'au site déjà existant. Car pour retranscrire un site, qui reflète correctement ce que l'on veux, il faut d'abord comprendre les enjeux et la vision du demandeur. Ainsi nous avons décidé de réaliser un site assez épuré ou la majorité des fonctionnalités se trouvent sur la page d'accueil, accessible depuis un bandeau de haut de page. 
 Pour réaliser tout cela, nous avons donc utiliser plusieurs technologies, sur lesquelles on reviendra au moment ou parle de leurs utilisations, parmi elle on peux compter html, css, js, php, dom, ajax et mysql.
  \newpage
@@ -87,6 +89,27 @@ Pour réaliser tout cela, nous avons donc utiliser plusieurs technologies, sur le
 	\
 	\
 \section{Présentation du projet}
+Pour terminer ce projet, nous avons eu énormément de choses à mettre en place. Tout d'abord, le but premier du site Kunu est de mettre en avant le naturisme, et de créer un site où tout ce qui est nécessaire pour effectuer cela est possible. En effet, le site Kunu que nous avons mis en place permet de faire tout ça. Nous avons commencé à mettre en place un bloc " notre vision ", tiré du blog Kunukunu.org pour montrer des l'entrée l'importance et l'interêt de cette pratique. Une seconde fonctionnalité qui à été implémenté est l'actualité. En effet, on s'est rendu compte que trouver des actualités récentes sur le naturisme n'est pas chose aisée. Ici tout est au même endroit.
+\\
+\\
+Pour les actualités actuellement sur le site, tout comme la vision, elles ont été récupéré sur le blog actuel de Kunu. Nous avons aussi implémenté un calendrier pour les evenements à venir.
+Ensuite, le tchat est la partie qui nous a demandé le plus de temps, en effet on ne savait pas du tout comment mettre tout cela en place. Au final en combinant AJAX et mysql nous avons fini par faire quelque chose de pratique. Nous expliquerons plus en détail dans la partie réservée au tchat comment nous avons mis tout cela en place.
+\\
+\\
+Il reste donc la partie voyage, divisée entre réservation et création de séjour. Ces deux parties n'ont pas été les plus compliquées à faire, excepté la map. La map lors de la réservation à en effet prit plus de temps que prévu. Un des soucis qui reste est que pour trouver un endroit sur la map, il faut que l'adresse, le pays ainsi que le code postal soit bon, sinon cela ne fonctionne pas.
+Puis la boutique, le dernier défi à surpasser. D'un côté la création de la boutique, de l'autre, l'ajout/suppression d'article. \\
+
+\\
+\\
+Nous avons donc fait les blocs suivants :
+\begin{itemize}
+\item Notre vision,
+\item Actualités,
+\item Calendrier,
+\item Tchat,
+\item Voyage,
+\item Boutique.
+\end{itemize}
  \newpage
 	\
 	\
@@ -117,12 +140,12 @@ Pour réaliser tout cela, nous avons donc utiliser plusieurs technologies, sur le
 \subsection{Accueil}
 \\
 \begin{center}
- \includegraphics[scale=0.4]{img/Accueil.png}
+ \includegraphics[scale=0.2]{img/Accueil.png}
 \end{center}
 \\
 \\
 \begin{center}
- \includegraphics[scale=0.4]{img/AccueilTel.png}
+ \includegraphics[scale=0.3]{img/AccueilTel.png}
 \end{center}
 \\
  \newpage
@@ -136,7 +159,7 @@ Pour réaliser tout cela, nous avons donc utiliser plusieurs technologies, sur le
 \subsection{Actualités}
 \\
 \begin{center}
- \includegraphics[scale=0.4]{img/Actualite.png}
+ \includegraphics[scale=0.2]{img/Actualite.png}
 \end{center}
 \\
 
@@ -151,7 +174,7 @@ Pour réaliser tout cela, nous avons donc utiliser plusieurs technologies, sur le
 \subsection{Calendrier}
 \\
 \begin{center}
- \includegraphics[scale=0.4]{img/Calendrier.png}
+ \includegraphics[scale=0.2]{img/Calendrier.png}
 \end{center}
 \\
 
@@ -166,7 +189,7 @@ Pour réaliser tout cela, nous avons donc utiliser plusieurs technologies, sur le
 \subsection{Boutique}
 \\
 \begin{center}
- \includegraphics[scale=0.4]{img/Boutique.png}
+ \includegraphics[scale=0.2]{img/Boutique.png}
 \end{center}
 \\
 
@@ -181,7 +204,7 @@ Pour réaliser tout cela, nous avons donc utiliser plusieurs technologies, sur le
 \subsection{Panier}
 \\
 \begin{center}
- \includegraphics[scale=0.4]{img/Panier.png}
+ \includegraphics[scale=0.2]{img/Panier.png}
 \end{center}
 \\
 
@@ -197,7 +220,7 @@ Pour réaliser tout cela, nous avons donc utiliser plusieurs technologies, sur le
 \subsection{Contact}
 \\
 \begin{center}
- \includegraphics[scale=0.4]{img/Contact.png}
+ \includegraphics[scale=0.2]{img/Contact.png}
 \end{center}
 \\
 
@@ -212,26 +235,26 @@ Pour réaliser tout cela, nous avons donc utiliser plusieurs technologies, sur le
 \subsection{Voyager}
 \\
 \begin{center}
- \includegraphics[scale=0.4]{img/Voyager.png}
+ \includegraphics[scale=0.8]{img/Voyager.png}
 \end{center}
 \\
 
 \subsubsection{Créer un séjour}
 \\
 \begin{center}
- \includegraphics[scale=0.4]{img/CreerSejour.png}
+ \includegraphics[scale=0.2]{img/CreerSejour.png}
 \end{center}
 \\
 
 \subsubsection{Réserver un séjour}
 \\
 \begin{center}
- \includegraphics[scale=0.4]{img/Sejour1.png}
+ \includegraphics[scale=0.2]{img/Sejour1.png}
 \end{center}
 \\
 \\
 \begin{center}
- \includegraphics[scale=0.4]{img/Sejour2.png}
+ \includegraphics[scale=0.2]{img/Sejour2.png}
 \end{center}
 \\
  \newpage
@@ -245,21 +268,21 @@ Pour réaliser tout cela, nous avons donc utiliser plusieurs technologies, sur le
 \subsection{Mon compte}
 \\
 \begin{center}
- \includegraphics[scale=0.4]{img/Compte.png}
+ \includegraphics[scale=0.9]{img/Compte.png}
 \end{center}
 \\
 
 \subsubsection{Mes infos}
 \\
 \begin{center}
- \includegraphics[scale=0.4]{img/Infos.png}
+ \includegraphics[scale=0.2]{img/Infos.png}
 \end{center}
 \\
 
 \subsubsection{Deconnexion}
 \\
 \begin{center}
- \includegraphics[scale=0.4]{img/Deconnexion.png}
+ \includegraphics[scale=0.6]{img/Deconnexion.png}
 \end{center}
 \\
 
@@ -288,7 +311,30 @@ Pour réaliser tout cela, nous avons donc utiliser plusieurs technologies, sur le
 	\
 	\
 	\
-\section{Répartitions des tâches}
+\section{Répartition des tâches}
+Au début du projet, nous voulions tous faire un peu de tout, sans forcément diviser le travail en fonction de nos préférences et en fonction du langage que l'on gère le mieux. On a ensuite rapidement constaté que cette méthode s'avérait trop longue et inefficace. De ce fait chacun a choisi la partie de code et le langage que préférions. Anthony s'est donc occupé du design avec le \textbf{CSS} en utilisant les flexbox et en faisant tout de lui même à la main sans Bootstrap. Il s'est donc occupé du FrontEnd. \\
+\\
+Quant à Baptiste et Cyril, ils se sont occupés du BackEnd ensemble. La partie de prédilection de Baptiste était le \textbf{SQL}, il s'occupait donc de la partie base de donnée. Cyril, s'occupait de l'\textbf{Ajax} pour que l'on puisse afficher les informations en temps réel notamment pour le Tchat et les réservations.\\
+\\
+Ensuite, Cyril et Baptiste liait tout cela ensemble en s'occupant du \textbf{PHP} et une fois terminé, envoyait le tout à Anthony.
+Par la suite, la "magie" et Anthony mettait en forme le tout. Nous avons donc travaillé en décalé et c'est à ce moment que notre rendement atteigne son paroxysme. 
+
+\\
+\\
+Finalement, voici un graphique montrant le temps que nous avons mis pour chaque étape de ce projet :
+\\
+\begin{center}
+ \includegraphics[scale=0.7]{img/graph.png}
+\end{center}
+\\
+
+
+
+
+
+
+
+
  \newpage
 	\
 	\
