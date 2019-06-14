@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.19)  13 JUN 2019 15:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.19)  14 JUN 2019 12:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1209,7 +1209,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 76--78
 
  []
 
-<img/Accueil.png, id=137, 1910.13625pt x 966.61125pt>
+<img/Accueil.png, id=132, 1910.13625pt x 966.61125pt>
 File: img/Accueil.png Graphic file (type png)
  <use img/Accueil.png>
 Package pdftex.def Info: img/Accueil.png used on input line 79.
@@ -1230,7 +1230,7 @@ l.82 L
 LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <13> not available
 (Font)              size <12> substituted on input line 84.
 
-<logo.png, id=139, 677.53125pt x 1026.83624pt>
+<logo.png, id=134, 677.53125pt x 1026.83624pt>
 File: logo.png Graphic file (type png)
  <use logo.png>
 Package pdftex.def Info: logo.png used on input line 84.
@@ -1301,9 +1301,35 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [4]
+
+./rapport.tex:137: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.137 \begin
+            {center}
+? 
+File: img/Accueil.png Graphic file (type png)
+<use img/Accueil.png>
+Package pdftex.def Info: img/Accueil.png used on input line 138.
+(pdftex.def)             Requested size: 382.02048pt x 193.31882pt.
+
+
+./rapport.tex:141: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.141 S
+       ur cette page là, un simple message " Bienvenue sur Kunu " extrêmemen...
+
+? 
 File: logo.png Graphic file (type png)
- <use logo.png>
-Package pdftex.def Info: logo.png used on input line 132.
+<use logo.png>
+Package pdftex.def Info: logo.png used on input line 142.
 (pdftex.def)             Requested size: 27.09663pt x 41.06645pt.
 
 
@@ -1313,61 +1339,31 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [5]
+Underfull \hbox (badness 10000) in paragraph at lines 143--150
 
-./rapport.tex:142: LaTeX Error: There's no line here to end.
+ []
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.142 \begin
-            {center}
-? 
-File: img/Accueil.png Graphic file (type png)
-<use img/Accueil.png>
-Package pdftex.def Info: img/Accueil.png used on input line 143.
-(pdftex.def)             Requested size: 382.02048pt x 193.31882pt.
-
-
-./rapport.tex:146: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.146 \\
-        
-? 
-
-./rapport.tex:147: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.147 \begin
-            {center}
-? 
-<img/AccueilTel.png, id=165, 390.45876pt x 894.34125pt>
+<img/AccueilTel.png, id=162, 390.45876pt x 894.34125pt>
 File: img/AccueilTel.png Graphic file (type png)
 
 <use img/AccueilTel.png>
-Package pdftex.def Info: img/AccueilTel.png used on input line 148.
+Package pdftex.def Info: img/AccueilTel.png used on input line 151.
 (pdftex.def)             Requested size: 117.13852pt x 268.30444pt.
 
 
-./rapport.tex:151: LaTeX Error: There's no line here to end.
+./rapport.tex:154: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.151  \newpage
-               
+l.154 N
+       ous parlions plus tôt des fonctionnalités accessible en parcourant la...
+
 ? 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png used on input line 151.
+Package pdftex.def Info: logo.png used on input line 155.
 (pdftex.def)             Requested size: 27.09663pt x 41.06645pt.
 
 
@@ -1377,35 +1373,30 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [6 <./img/AccueilTel.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 164--166
 
-./rapport.tex:161: LaTeX Error: There's no line here to end.
+ []
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.161 \begin
-            {center}
-? 
-<img/Actualite.png, id=174, 1912.14375pt x 963.6pt>
+<img/Actualite.png, id=170, 1912.14375pt x 963.6pt>
 File: img/Actualite.png Graphic file (type png)
  <use img/Actualite.png>
-Package pdftex.def Info: img/Actualite.png used on input line 162.
+Package pdftex.def Info: img/Actualite.png used on input line 167.
 (pdftex.def)             Requested size: 382.42198pt x 192.71658pt.
 
 
-./rapport.tex:165: LaTeX Error: There's no line here to end.
+./rapport.tex:170: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.165 
-      
+l.170 I
+       l suffit ensuite de cliquer dessus pour avoir accès à la totalité de ...
+
 ? 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png used on input line 166.
+Package pdftex.def Info: logo.png used on input line 172.
 (pdftex.def)             Requested size: 27.09663pt x 41.06645pt.
 
 
@@ -1415,36 +1406,31 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [7 <./img/Actualite.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 181--183
 
-./rapport.tex:176: LaTeX Error: There's no line here to end.
+ []
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.176 \begin
-            {center}
-? 
-<img/Calendrier.png, id=181, 1909.1325pt x 966.61125pt>
+<img/Calendrier.png, id=177, 1909.1325pt x 966.61125pt>
 File: img/Calendrier.png Graphic file (type png)
 
 <use img/Calendrier.png>
-Package pdftex.def Info: img/Calendrier.png used on input line 177.
+Package pdftex.def Info: img/Calendrier.png used on input line 184.
 (pdftex.def)             Requested size: 381.81973pt x 193.31882pt.
 
 
-./rapport.tex:180: LaTeX Error: There's no line here to end.
+./rapport.tex:187: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.180 
-      
+l.187 S
+       ur celle-ci , en enlevant les limites de droits pour chaque choses, i...
+
 ? 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png used on input line 181.
+Package pdftex.def Info: logo.png used on input line 189.
 (pdftex.def)             Requested size: 27.09663pt x 41.06645pt.
 
 
@@ -1454,35 +1440,30 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [8 <./img/Calendrier.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 198--200
 
-./rapport.tex:191: LaTeX Error: There's no line here to end.
+ []
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.191 \begin
-            {center}
-? 
-<img/Boutique.png, id=189, 1907.125pt x 967.615pt>
+<img/Boutique.png, id=185, 1907.125pt x 967.615pt>
 File: img/Boutique.png Graphic file (type png)
  <use img/Boutique.png>
-Package pdftex.def Info: img/Boutique.png used on input line 192.
+Package pdftex.def Info: img/Boutique.png used on input line 201.
 (pdftex.def)             Requested size: 381.41824pt x 193.51958pt.
 
 
-./rapport.tex:195: LaTeX Error: There's no line here to end.
+./rapport.tex:204: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.195 
-      
+l.204 N
+       ous avons créé de faux articles, afin de pouvoir essayer de voir comm...
+
 ? 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png used on input line 196.
+Package pdftex.def Info: logo.png used on input line 205.
 (pdftex.def)             Requested size: 27.09663pt x 41.06645pt.
 
 
@@ -1492,35 +1473,30 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [9 <./img/Boutique.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 214--216
 
-./rapport.tex:206: LaTeX Error: There's no line here to end.
+ []
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.206 \begin
-            {center}
-? 
-<img/Panier.png, id=196, 1906.12125pt x 806.01125pt>
+<img/Panier.png, id=192, 1906.12125pt x 806.01125pt>
 File: img/Panier.png Graphic file (type png)
  <use img/Panier.png>
-Package pdftex.def Info: img/Panier.png used on input line 207.
+Package pdftex.def Info: img/Panier.png used on input line 217.
 (pdftex.def)             Requested size: 381.2175pt x 161.19939pt.
 
 
-./rapport.tex:210: LaTeX Error: There's no line here to end.
+./rapport.tex:220: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.210 
-      
+l.220 I
+       ci, le thé coûte 8 euros, il y en a 3 donc 24 euros. Plus le livre a ...
+
 ? 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png used on input line 211.
+Package pdftex.def Info: logo.png used on input line 223.
 (pdftex.def)             Requested size: 27.09663pt x 41.06645pt.
 
 
@@ -1531,34 +1507,34 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [10 <./img/Panier.png>]
 
-./rapport.tex:222: LaTeX Error: There's no line here to end.
+./rapport.tex:236: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.222 \begin
+l.236 \begin
             {center}
 ? 
-<img/Contact.png, id=203, 1910.13625pt x 963.6pt>
+<img/Contact.png, id=199, 1910.13625pt x 963.6pt>
 File: img/Contact.png Graphic file (type png)
  <use img/Contact.png>
-Package pdftex.def Info: img/Contact.png used on input line 223.
+Package pdftex.def Info: img/Contact.png used on input line 237.
 (pdftex.def)             Requested size: 382.02048pt x 192.71658pt.
 
 
-./rapport.tex:226: LaTeX Error: There's no line here to end.
+./rapport.tex:240: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.226 
+l.240 
       
 ? 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png used on input line 227.
+Package pdftex.def Info: logo.png used on input line 241.
 (pdftex.def)             Requested size: 27.09663pt x 41.06645pt.
 
 
@@ -1569,149 +1545,53 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [11 <./img/Contact.png>]
 
-./rapport.tex:237: LaTeX Error: There's no line here to end.
+./rapport.tex:253: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.237 \begin
+l.253 \begin
             {center}
 ? 
-<img/Voyager.png, id=210, 140.525pt x 120.45pt>
+<img/Voyager.png, id=206, 140.525pt x 120.45pt>
 File: img/Voyager.png Graphic file (type png)
  <use img/Voyager.png>
-Package pdftex.def Info: img/Voyager.png used on input line 238.
+Package pdftex.def Info: img/Voyager.png used on input line 254.
 (pdftex.def)             Requested size: 112.42014pt x 96.3601pt.
 
 
-./rapport.tex:241: LaTeX Error: There's no line here to end.
+./rapport.tex:257: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.241 
+l.257 
       
 ? 
 
-./rapport.tex:244: LaTeX Error: There's no line here to end.
+./rapport.tex:268: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.244 \begin
-            {center}
+l.268 C
+       ette création de séjour est enregistrée dans une BDD, avec le nom de ...
+
 ? 
-<img/CreerSejour.png, id=211, 1909.1325pt x 956.57375pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 268--270
+
+ []
+
+<img/CreerSejour.png, id=207, 1909.1325pt x 956.57375pt>
 File: img/CreerSejour.png Graphic file (type png)
 
 <use img/CreerSejour.png>
-Package pdftex.def Info: img/CreerSejour.png used on input line 245.
+Package pdftex.def Info: img/CreerSejour.png used on input line 271.
 (pdftex.def)             Requested size: 381.81973pt x 191.31136pt.
-
-
-./rapport.tex:248: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.248 
-      
-? 
-
-./rapport.tex:251: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.251 \begin
-            {center}
-? 
-<img/Sejour1.png, id=212, 1906.12125pt x 964.60374pt>
-File: img/Sejour1.png Graphic file (type png)
- <use img/Sejour1.png>
-Package pdftex.def Info: img/Sejour1.png used on input line 252.
-(pdftex.def)             Requested size: 381.2175pt x 192.91733pt.
-File: logo.png Graphic file (type png)
-
-<use logo.png>
-Package pdftex.def Info: logo.png used on input line 253.
-(pdftex.def)             Requested size: 27.09663pt x 41.06645pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 47.66652pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[12 <./img/Voyager.png> <./img/CreerSejour.png>]
-
-./rapport.tex:255: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.255 \\
-        
-? 
-
-./rapport.tex:256: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.256 \begin
-            {center}
-? 
-<img/Sejour2.png, id=223, 1909.1325pt x 967.615pt>
-File: img/Sejour2.png Graphic file (type png)
- <use img/Sejour2.png>
-Package pdftex.def Info: img/Sejour2.png used on input line 257.
-(pdftex.def)             Requested size: 381.81973pt x 193.51958pt.
-
-
-./rapport.tex:260: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.260  \newpage
-               
-? 
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png used on input line 260.
-(pdftex.def)             Requested size: 27.09663pt x 41.06645pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 47.66652pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[13 <./img/Sejour1.png> <./img/Sejour2.png>]
-
-./rapport.tex:270: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.270 \begin
-            {center}
-? 
-<img/Compte.png, id=232, 166.6225pt x 189.70876pt>
-File: img/Compte.png Graphic file (type png)
- <use img/Compte.png>
-Package pdftex.def Info: img/Compte.png used on input line 271.
-(pdftex.def)             Requested size: 149.95885pt x 170.73628pt.
 
 
 ./rapport.tex:274: LaTeX Error: There's no line here to end.
@@ -1723,61 +1603,9 @@ Type  H <return>  for immediate help.
 l.274 
       
 ? 
-
-./rapport.tex:277: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.277 \begin
-            {center}
-? 
-<img/Infos.png, id=233, 1908.12875pt x 846.16125pt>
-File: img/Infos.png Graphic file (type png)
- <use img/Infos.png>
-Package pdftex.def Info: img/Infos.png used on input line 278.
-(pdftex.def)             Requested size: 381.61899pt x 169.22925pt.
-
-
-./rapport.tex:281: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.281 
-      
-? 
-
-./rapport.tex:284: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.284 \begin
-            {center}
-? 
-<img/Deconnexion.png, id=234, 441.65pt x 104.39pt>
-File: img/Deconnexion.png Graphic file (type png)
- <use img/Deconnexion.png>
-Package pdftex.def Info: img/Deconnexion.png used on input line 285.
-(pdftex.def)             Requested size: 264.99203pt x 62.63446pt.
-
-
-./rapport.tex:288: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.288 
-      
-? 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png used on input line 289.
+Package pdftex.def Info: logo.png used on input line 275.
 (pdftex.def)             Requested size: 27.09663pt x 41.06645pt.
 
 
@@ -1786,7 +1614,39 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[14 <./img/Compte.png> <./img/Infos.png> <./img/Deconnexion.png>]
+[12 <./img/Voyager.png> <./img/CreerSejour.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 287--289
+
+ []
+
+<img/Sejour1.png, id=217, 1906.12125pt x 964.60374pt>
+File: img/Sejour1.png Graphic file (type png)
+ <use img/Sejour1.png>
+Package pdftex.def Info: img/Sejour1.png used on input line 290.
+(pdftex.def)             Requested size: 343.08702pt x 173.62119pt.
+
+
+./rapport.tex:293: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.293 O
+       n arrive sur une page, où l'on à accès a tous les séjours disponibles...
+
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 293--295
+
+ []
+
+<img/Sejour2.png, id=218, 1909.1325pt x 967.615pt>
+File: img/Sejour2.png Graphic file (type png)
+ <use img/Sejour2.png>
+Package pdftex.def Info: img/Sejour2.png used on input line 296.
+(pdftex.def)             Requested size: 343.62903pt x 174.16318pt.
+
 
 ./rapport.tex:299: LaTeX Error: There's no line here to end.
 
@@ -1794,32 +1654,181 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.299 \begin
+l.299 O
+       n peux ensuite décider de voir sur la map, où cela se situe. Pour que...
+
+? 
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png used on input line 300.
+(pdftex.def)             Requested size: 27.09663pt x 41.06645pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 47.66652pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[13 <./img/Sejour1.png> <./img/Sejour2.png>]
+
+./rapport.tex:310: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.310 \begin
             {center}
 ? 
-<img/Tchat.png, id=245, 1126.2075pt x 510.90875pt>
-File: img/Tchat.png Graphic file (type png)
- <use img/Tchat.png>
-Package pdftex.def Info: img/Tchat.png used on input line 300.
-(pdftex.def)             Requested size: 450.47502pt x 204.35988pt.
+<img/Compte.png, id=227, 166.6225pt x 189.70876pt>
+File: img/Compte.png Graphic file (type png)
+ <use img/Compte.png>
+Package pdftex.def Info: img/Compte.png used on input line 311.
+(pdftex.def)             Requested size: 149.95885pt x 170.73628pt.
 
-Overfull \hbox (32.22134pt too wide) in paragraph at lines 300--301
+
+./rapport.tex:314: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.314 V
+       oici donc les 4 parties différentes incluses dans "mon compte", le pa...
+
+? 
+
+./rapport.tex:317: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.317 \begin
+            {center}
+? 
+<img/Infos.png, id=228, 1908.12875pt x 846.16125pt>
+File: img/Infos.png Graphic file (type png)
+ <use img/Infos.png>
+Package pdftex.def Info: img/Infos.png used on input line 318.
+(pdftex.def)             Requested size: 381.61899pt x 169.22925pt.
+
+
+./rapport.tex:321: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.321 L
+       e premier bloc est donc un résumé des informations concernant le comp...
+
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 321--323
+
+ []
+
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png used on input line 323.
+(pdftex.def)             Requested size: 27.09663pt x 41.06645pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 47.66652pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[14 <./img/Compte.png> <./img/Infos.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 324--332
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 324--332
+
+ []
+
+
+./rapport.tex:336: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.336 \begin
+            {center}
+? 
+<img/Inscrit.png, id=237, 1173.38374pt x 121.45375pt>
+File: img/Inscrit.png Graphic file (type png)
+ <use img/Inscrit.png>
+Package pdftex.def Info: img/Inscrit.png used on input line 337.
+(pdftex.def)             Requested size: 434.14519pt x 44.93716pt.
+
+Overfull \hbox (15.89151pt too wide) in paragraph at lines 337--338
  [] 
  []
 
 
-./rapport.tex:303: LaTeX Error: There's no line here to end.
+./rapport.tex:340: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.303 
+l.340 	\\
+         
+? 
+
+./rapport.tex:341: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.341 	\\
+         
+? 
+
+./rapport.tex:342: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.342 
       
+? 
+
+./rapport.tex:347: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.347 \begin
+            {center}
+? 
+<img/Deconnexion.png, id=238, 441.65pt x 104.39pt>
+File: img/Deconnexion.png Graphic file (type png)
+ <use img/Deconnexion.png>
+Package pdftex.def Info: img/Deconnexion.png used on input line 348.
+(pdftex.def)             Requested size: 264.99203pt x 62.63446pt.
+
+
+./rapport.tex:351: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.351 \subsubsection
+                    {Panel administrateur}
 ? 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png used on input line 307.
+Package pdftex.def Info: logo.png used on input line 355.
 (pdftex.def)             Requested size: 27.09663pt x 41.06645pt.
 
 
@@ -1828,61 +1837,104 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[15 <./img/Tchat.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 315--321
+[15 <./img/Inscrit.png> <./img/Deconnexion.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 364--366
 
  []
 
+<img/Tchat.png, id=248, 1126.2075pt x 510.90875pt>
+File: img/Tchat.png Graphic file (type png)
+ <use img/Tchat.png>
+Package pdftex.def Info: img/Tchat.png used on input line 367.
+(pdftex.def)             Requested size: 416.69026pt x 189.03328pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 315--321
 
- []
-
-
-./rapport.tex:323: LaTeX Error: There's no line here to end.
+./rapport.tex:370: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.323 \\
+l.370 L
+       e tchat est divisé en 3 parties, la première est une liste déroulante...
+
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 370--377
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 370--377
+
+ []
+
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png used on input line 380.
+(pdftex.def)             Requested size: 27.09663pt x 41.06645pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 47.66652pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[16 <./img/Tchat.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 388--394
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 388--394
+
+ []
+
+
+./rapport.tex:396: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.396 \\
         
 ? 
 
-./rapport.tex:324: LaTeX Error: There's no line here to end.
+./rapport.tex:397: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.324 F
+l.397 F
        inalement, voici un graphique montrant le temps que nous avons mis po...
 
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--326
+Underfull \hbox (badness 10000) in paragraph at lines 397--399
 
  []
 
-<img/graph.png, id=252, 473.77pt x 360.34625pt>
+<img/graph.png, id=255, 473.77pt x 360.34625pt>
 File: img/graph.png Graphic file (type png)
  <use img/graph.png>
-Package pdftex.def Info: img/graph.png used on input line 327.
+Package pdftex.def Info: img/graph.png used on input line 400.
 (pdftex.def)             Requested size: 331.63673pt x 252.24065pt.
 
 
-./rapport.tex:330: LaTeX Error: There's no line here to end.
+./rapport.tex:403: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.330 
+l.403 
       
 ? 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png used on input line 338.
+Package pdftex.def Info: logo.png used on input line 411.
 (pdftex.def)             Requested size: 27.09663pt x 41.06645pt.
 
 
@@ -1891,11 +1943,26 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16 <./img/graph.png>] 
+[17 <./img/graph.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 419--430
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 419--430
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 419--430
+
+ []
+
+
 AED: lastpage setting LastPage
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png used on input line 348.
+Package pdftex.def Info: logo.png used on input line 432.
 (pdftex.def)             Requested size: 27.09663pt x 41.06645pt.
 
 
@@ -1904,29 +1971,29 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[17]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 348.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 348.
+[18]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 432.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 432.
  (./rapport.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 348.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 348.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 432.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 432.
 Package rerunfilecheck Info: File `rapport.out' has not changed.
-(rerunfilecheck)             Checksum: 2C7D54C98BF2AD73B20D5D1AAA787196;947.
+(rerunfilecheck)             Checksum: 73620632C703F37F8CD8E26FCA5E1861;902.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 348.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 432.
  ) 
 Here is how much of TeX's memory you used:
- 33762 strings out of 492995
- 663833 string characters out of 6132704
+ 33767 strings out of 492995
+ 663916 string characters out of 6132704
  747099 words of memory out of 5000000
- 36751 multiletter control sequences out of 15000+600000
+ 36754 multiletter control sequences out of 15000+600000
  25029 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,16n,101p,10490b,457s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 63i,16n,101p,10490b,423s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></
 usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></us
@@ -1937,10 +2004,10 @@ l/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/
 texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/te
 xlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texl
 ive/2017/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on rapport.pdf (18 pages, 3188367 bytes).
+Output written on rapport.pdf (19 pages, 3220591 bytes).
 PDF statistics:
- 307 PDF objects out of 1000 (max. 8388607)
- 217 compressed objects within 3 object streams
- 39 named destinations out of 1000 (max. 500000)
- 370 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 311 PDF objects out of 1000 (max. 8388607)
+ 218 compressed objects within 3 object streams
+ 40 named destinations out of 1000 (max. 500000)
+ 367 words of extra memory for PDF output out of 10000 (max. 10000000)
 

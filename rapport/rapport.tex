@@ -79,8 +79,8 @@
  \includegraphics[scale=0.2]{img/Accueil.png}
 \end{center}
 \\
-Le principe de ce site? Réunir tout ce qui peux être important/intéressant a savoir lorsque l'on s'intéresse au naturisme. Et ce, autant pour la partie intéraction entre adepte de ce choix de vie, qu?information sur le sujet ou création/réservation de séjours. Afin de mener à bien ce projet, nous nous sommes grandement intéressé aux cahiers des charges fournit, mais plus précisément aux annexes, ainsi qu'au site déjà existant. Car pour retranscrire un site, qui reflète correctement ce que l'on veux, il faut d'abord comprendre les enjeux et la vision du demandeur. Ainsi nous avons décidé de réaliser un site assez épuré ou la majorité des fonctionnalités se trouvent sur la page d'accueil, accessible depuis un bandeau de haut de page. 
-Pour réaliser tout cela, nous avons donc utiliser plusieurs technologies, sur lesquelles on reviendra au moment ou parle de leurs utilisations, parmi elle on peux compter html, css, js, php, dom, ajax et mysql.
+Le principe de ce site? Réunir tout ce qui peux être important/intéressant a savoir lorsque l'on s'intéresse au naturisme. Et ce, autant pour la partie intéraction entre adepte de ce choix de vie, qu'information sur le sujet ou création/réservation de séjours. Afin de mener à bien ce projet, nous nous sommes grandement intéressé aux cahiers des charges fournit, mais plus précisément aux annexes, ainsi qu'au site déjà existant. Car pour retranscrire un site, qui reflète correctement ce que l'on veux, il faut d'abord comprendre les enjeux et la vision du demandeur. Ainsi nous avons décidé de réaliser un site assez épuré ou la majorité des fonctionnalités se trouvent sur la page d'accueil, accessible depuis un bandeau de haut de page. 
+Pour réaliser tout cela, nous avons donc utiliser plusieurs technologies, sur lesquelles on reviendra au moment ou parle de leurs utilisations, parmi elle on peux compter \textbf{Html}, \textbf{CSS}, \textbf{Js}, \textbf{PHP}, \textbf{DOM}, \textbf{AJAX} et \textbf{MYSQL}.
  \newpage
 	\
 	\
@@ -92,8 +92,8 @@ Pour réaliser tout cela, nous avons donc utiliser plusieurs technologies, sur le
 Pour terminer ce projet, nous avons eu énormément de choses à mettre en place. Tout d'abord, le but premier du site Kunu est de mettre en avant le naturisme, et de créer un site où tout ce qui est nécessaire pour effectuer cela est possible. En effet, le site Kunu que nous avons mis en place permet de faire tout ça. Nous avons commencé à mettre en place un bloc " notre vision ", tiré du blog Kunukunu.org pour montrer des l'entrée l'importance et l'interêt de cette pratique. Une seconde fonctionnalité qui à été implémenté est l'actualité. En effet, on s'est rendu compte que trouver des actualités récentes sur le naturisme n'est pas chose aisée. Ici tout est au même endroit.
 \\
 \\
-Pour les actualités actuellement sur le site, tout comme la vision, elles ont été récupéré sur le blog actuel de Kunu. Nous avons aussi implémenté un calendrier pour les evenements à venir.
-Ensuite, le tchat est la partie qui nous a demandé le plus de temps, en effet on ne savait pas du tout comment mettre tout cela en place. Au final en combinant AJAX et mysql nous avons fini par faire quelque chose de pratique. Nous expliquerons plus en détail dans la partie réservée au tchat comment nous avons mis tout cela en place.
+Pour les actualités actuellement sur le site, tout comme la vision, elles ont été récupéré sur le blog actuel de Kunu. Nous avons aussi implémenté un calendrier pour les évènements à venir.
+Ensuite, le tchat est la partie qui nous a demandé le plus de temps, en effet on ne savait pas du tout comment mettre tout cela en place. Au final en combinant \textbf{AJAX} et \textbf{MYSQL} nous avons fini par faire quelque chose de pratique. Nous expliquerons plus en détail dans la partie réservée au tchat comment nous avons mis tout cela en place.
 \\
 \\
 Il reste donc la partie voyage, divisée entre réservation et création de séjour. Ces deux parties n'ont pas été les plus compliquées à faire, excepté la map. La map lors de la réservation à en effet prit plus de temps que prévu. Un des soucis qui reste est que pour trouver un endroit sur la map, il faut que l'adresse, le pays ainsi que le code postal soit bon, sinon cela ne fonctionne pas.
@@ -119,7 +119,7 @@ Nous avons donc fait les blocs suivants :
 	\
 
 
-\section{Choix technologiques}
+\section{Choix technologique et design}
  \newpage
 	\
 	\
@@ -128,7 +128,17 @@ Nous avons donc fait les blocs suivants :
 	\
 	\
 
-\section{Choix de design}
+
+\section{Description des pages}
+\subsection{Accueil}
+Voici ci-dessous la page d'accueil, celle sur laquelle on arriver dès que l'on s'est connecté.
+
+\\
+\begin{center}
+ \includegraphics[scale=0.2]{img/Accueil.png}
+\end{center}
+\\
+Sur cette page là, un simple message " Bienvenue sur Kunu " extrêmement épuré. C'est le point central du site, le haut de page nous permet l'accès à tout le nécessaire, malgré le fait que la plupart des fonctionnalités sont accessibles via un scroll down. Nous avons également soigné la version mobile : ( page suivante )
  \newpage
 	\
 	\
@@ -136,18 +146,12 @@ Nous avons donc fait les blocs suivants :
 	\
 	\
 	\
-\section{Descriptions des pages}
-\subsection{Accueil}
-\\
-\begin{center}
- \includegraphics[scale=0.2]{img/Accueil.png}
-\end{center}
-\\
 \\
 \begin{center}
  \includegraphics[scale=0.3]{img/AccueilTel.png}
 \end{center}
 \\
+Nous parlions plus tôt des fonctionnalités accessible en parcourant la page, la première est le bloc "notre vision" où l'on peut retrouver notre point de vue sur le naturisme. Viennent ensuite les actualités. 
  \newpage
 	\
 	\
@@ -157,11 +161,13 @@ Nous avons donc fait les blocs suivants :
 	\
 
 \subsection{Actualités}
+Pour cette partie là, nous avons décidé de remettre les actualités présentent sur le blog. Ainsi sur la page principale, on peut voir un titre, une photo et la date de l'actualité.
 \\
 \begin{center}
  \includegraphics[scale=0.2]{img/Actualite.png}
 \end{center}
 \\
+Il suffit ensuite de cliquer dessus pour avoir accès à la totalité de l'information.
 
  \newpage
 	\
@@ -172,11 +178,13 @@ Nous avons donc fait les blocs suivants :
 	\
 
 \subsection{Calendrier}
+Afin de mettre en place un calendrier, nous avons choisi l'API de Google agenda.
 \\
 \begin{center}
  \includegraphics[scale=0.2]{img/Calendrier.png}
 \end{center}
 \\
+Sur celle-ci , en enlevant les limites de droits pour chaque choses, il est possible d'y ajouter des événements visibles pour la totalité des utilisateurs. Cela permet à tout le monde d'être au courant de ce qu'il se passe dans les jours à venir. 
 
  \newpage
 	\
@@ -187,12 +195,13 @@ Nous avons donc fait les blocs suivants :
 	\
 	
 \subsection{Boutique}
+La boutique à été légèrement plus complexe à implémenter puisque nous avions besoin de la base de données afin de tout gérer. Donc, comme on peut le voir ci dessous : 
 \\
 \begin{center}
  \includegraphics[scale=0.2]{img/Boutique.png}
 \end{center}
 \\
-
+Nous avons créé de faux articles, afin de pouvoir essayer de voir comment tout cela fonctionne. Pour cela, pas de page d'article à part, une page générale avec tout. Chaque article à son espace, avec le titre, l'image la description (dont le prix fait parti), et un bouton ajouter au panier. Il suffit de cliquer sur ce bouton pour actualiser la base de donnée, cela permet en effet de créer ou d'incrémenter la quantité d'un article pour l'utilisateur actuellement connecté. La suite se déroule dans le panier. 
  \newpage
 	\
 	\
@@ -202,11 +211,14 @@ Nous avons donc fait les blocs suivants :
 	\
 	
 \subsection{Panier}
+La panier, de base est parfaitement vide. Lorsque l'on ajoute un article depuis la boutique, un cadre "Votre panier" se créée, et se remplit des articles choisis. Évidemment, ajouter deux fois le même article permet simplement d'augmenter la quantité de l'article de un pas de doublons à l'affichage. Nous avons donc choisi de montrer ici, le nom de l'article, sa photo, sa quantité, et le prix adapté au nombre d'exemplaire voulu. Ainsi que le prix pour le total.
 \\
 \begin{center}
  \includegraphics[scale=0.2]{img/Panier.png}
 \end{center}
 \\
+Ici, le thé coûte 8 euros, il y en a 3 donc 24 euros. Plus le livre a 5 euros, 29 prix total.
+Il y a également un bouton pour vider la totalité du panier, qui encore une fois met à jour la BDD, ainsi qu'un bouton pour retourner à la boutique. 
 
  \newpage
 	\
@@ -218,6 +230,8 @@ Nous avons donc fait les blocs suivants :
 	
 
 \subsection{Contact}
+Cette page là, bien que simple à comprendre est importante, elle se situe tout en bas de la page d'accueil, et permet d'envoyer un avis, une recommandation aux personnes gérant le site, pour cela, juste un nom, prénom, pays,  message à entrer. 
+
 \\
 \begin{center}
  \includegraphics[scale=0.2]{img/Contact.png}
@@ -233,30 +247,56 @@ Nous avons donc fait les blocs suivants :
 	\
 	
 \subsection{Voyager}
+Cette partie la est divisée en deux parties que voici : 
+
 \\
 \begin{center}
  \includegraphics[scale=0.8]{img/Voyager.png}
 \end{center}
 \\
 
+
 \subsubsection{Créer un séjour}
+Tout d'abord la création de séjour, pour se faire, nous avons besoin simplement de ces informations :
+\begin{itemize}
+\item un titre de séjour,
+\item une description,
+\item un prix/personne/nuit,
+\item l'adresse complète.
+\end{itemize}
+\\
+Cette création de séjour est enregistrée dans une BDD, avec le nom de la personne qui à créer ce dernier. 
 \\
 \begin{center}
  \includegraphics[scale=0.2]{img/CreerSejour.png}
 \end{center}
 \\
 
+ \newpage
+	\
+	\
+	\
+	\
+	\
+	\
+	
+
+
+
 \subsubsection{Réserver un séjour}
+C'est ici que la réservation se fait comme montré ci-dessous cette page se divise en deux, la partie informative et la partie réservation. 
 \\
 \begin{center}
- \includegraphics[scale=0.2]{img/Sejour1.png}
+ \includegraphics[scale=0.18]{img/Sejour1.png}
 \end{center}
 \\
+On arrive sur une page, où l'on à accès a tous les séjours disponibles sur une liste déroulante, une fois que l'on veux plus d'info sur l'un d'entre eux, on le sélectionne dans cette même liste. Puis s'affichent toutes les informations relative à ce séjour.
 \\
 \begin{center}
- \includegraphics[scale=0.2]{img/Sejour2.png}
+ \includegraphics[scale=0.18]{img/Sejour2.png}
 \end{center}
 \\
+On peux ensuite décider de voir sur la map, où cela se situe. Pour que la map fonctionne correctement, il faut que l'adresse complète soit correcte, y compris le code postal, sinon cela peux poser problème. Le pseudo du créateur est également afficher, si jamais on veut lui demander des infos supplémentaires. Dès que le choix est fait, il suffit d'écrire le titre du séjour, de rentrer la date de début, le temps et le nombre de personnes et la BDD sera mise à jour puis la réservation s'affichera dans "Mes informations".
  \newpage
 	\
 	\
@@ -271,20 +311,46 @@ Nous avons donc fait les blocs suivants :
  \includegraphics[scale=0.9]{img/Compte.png}
 \end{center}
 \\
-
+Voici donc les 4 parties différentes incluses dans "mon compte", le panier à déjà été décrit plus haut, et nous réservons une partie complète pour le tchat juste après en vu de sa complexité, ici nous parlerons donc de "mes infos", "vos séjours" et "vos réservations" ainsi que la déconnexion. 
 \subsubsection{Mes infos}
 \\
 \begin{center}
  \includegraphics[scale=0.2]{img/Infos.png}
 \end{center}
 \\
-
+Le premier bloc est donc un résumé des informations concernant le compte connecté, évidemment ces infos sont modifiables via un bouton. Ensuite il y a deux blocs, séjours et réservations, identiques. Le premier résume les séjours que vous avez ajouter sur le site, le second ceux que vous avez réservé, avec toutes les infos y compris le prix. 
+\\
+ \newpage
+	\
+	\
+	\
+	\
+	\
+	\
+	\\
+	\\
+	
+Les informations personelles sont dans une table de la BDD, où le mot de passe, bien que changeable est crypté en md5, nous avons donc pas directement accès aux mot de passe des utilisateurs. (Dernière case de la photo ci-dessous) 	
+	
+	\\
+\begin{center}
+ \includegraphics[scale=0.37]{img/Inscrit.png}
+\end{center}
+\\
+	\\
+	\\
+	
 \subsubsection{Deconnexion}
+Le bouton déconnexion permet simplement de se déconnecté et revenir a la page de connexion, grâce au code suivant :
+
 \\
 \begin{center}
  \includegraphics[scale=0.6]{img/Deconnexion.png}
 \end{center}
 \\
+\subsubsection{Panel administrateur}
+De plus, nous avons mis en place un panel administrateur, pour que celui-ci puisse gérer toutes les données déposées sur le site.
+C'est-à-dire, qu'à l'aide de ce panel, on peut supprimer des messages ou des conversations, supprimer des utilisateurs, des réservations et même les séjours. Il peut aussi voir l'état des paniers des utilisateurs, leurs données (excepté leur mot de passe bien sûr) et donc de s'occuper de la maintenance en général.
 
  \newpage
 	\
@@ -295,12 +361,19 @@ Nous avons donc fait les blocs suivants :
 	\
 	
 \subsection{Tchat}
+La partie qui nous a prit le plus de temps, le tchat. 
 \\
 \begin{center}
- \includegraphics[scale=0.4]{img/Tchat.png}
+ \includegraphics[scale=0.37]{img/Tchat.png}
 \end{center}
 \\
-
+Le tchat est divisé en 3 parties, la première est une liste déroulante, où il suffit de choisir un interlocuteur, afin d'avoir accès à notre conversation avec celui-ci. Viens ensuite la partie discussion ou l'on voit, nos messages ainsi que les siens, anciens comme nouveaux messages qui arrivent sans avoir besoin de recharger la page. 
+\\
+\\
+Puis la partie où l'on tape le message et l'envoi. Voici un résumé rapide des méthodes que nous avons utilisé. Une BDD avec la totalité des messages, qui englobe l'envoyeur, le destinataire, le message ainsi qu'un ID unique. 
+\\
+\\
+Chaque nouveau message est envoyé dans la BDD. L'affichage se fait en regardant les messages entre les deux personnes, puis nous affichons ceux de notre destinataire a gauche, les nôtres à droite. Tout cet affichage est effectué grâce à AJAX. L'ordre des messages suit l'ordre des ID de la BDD ainsi, les plus vieux se retrouvent en haut de l'écran et les récents en bas.
 
 
 
@@ -317,7 +390,7 @@ Au début du projet, nous voulions tous faire un peu de tout, sans forcément divi
 Quant à Baptiste et Cyril, ils se sont occupés du BackEnd ensemble. La partie de prédilection de Baptiste était le \textbf{SQL}, il s'occupait donc de la partie base de donnée. Cyril, s'occupait de l'\textbf{Ajax} pour que l'on puisse afficher les informations en temps réel notamment pour le Tchat et les réservations.\\
 \\
 Ensuite, Cyril et Baptiste liait tout cela ensemble en s'occupant du \textbf{PHP} et une fois terminé, envoyait le tout à Anthony.
-Par la suite, la "magie" et Anthony mettait en forme le tout. Nous avons donc travaillé en décalé et c'est à ce moment que notre rendement atteigne son paroxysme. 
+Par la suite, la "magie" et Anthony mettait en forme le tout. Nous avons donc travaillé en décalé et c'est à ce moment que notre rendement a atteint son paroxysme. De plus, notre utilisation de \textbf{Gitlab} nous a permis de conserver toutes les versions de notre site et de pouvoir travailler en même temps notamment avec les différentes branches que nous avons créées.
 
 \\
 \\
@@ -343,6 +416,17 @@ Finalement, voici un graphique montrant le temps que nous avons mis pour chaque 
 	\
 	\
 \section{Bilan et perspectives}
+Pour résumer, au cours de ce projet nous avons réussi à faire fonctionner toutes les différentes pages demandées, et à réaliser un site entièrement fonctionnel.
+Ce projet fut bénéfique pour plusieurs points, tout d?abord et le plus important il nous a permis de nous familiariser les différents langages que sont , le  \textbf{Html}, \textbf{CSS}, \textbf{Js}, \textbf{PHP}, \textbf{DOM}, \textbf{AJAX} et \textbf{MYSQL}, et plus généralement avec l'esprit du développement web. La mise en place du module Tchat était également difficile a mettre en place et à réaliser, tout comme l'utilisation de la BDD pour les créations de compte et autres gestion de données mais nous nous y sommes habitué et cela nous procuré un très bon entrainement.
+\\
+\\
+La répartition du travail a été très importante puisque le projet n'aurait jamais pu être fini sans nous pensions l'avoir répartie équitablement que ce soit au niveau de la difficulté et du temps. L'utilisation du Git a aussi été très utile, malgré le fait que nous l'utilisions déjà.
+\\
+\\
+Finalement, nous avons implémenté toutes les pages de ce site pour que son développement à l'avenir sois le plus simple possible et prenne le moins de temps possible. Nous allons aussi sûrement présenter ce site dans notre "portefolio" pour le présenter lors de nos futurs recherches de stages.
+\\
+\\
+Nous tenons à remercier tout particulièrement Monsieur Bartholomew George, pour toute l'aide qu'il a pu nous fournir et pour toutes les réponses à nos questions.
 
 
  \end{document}
