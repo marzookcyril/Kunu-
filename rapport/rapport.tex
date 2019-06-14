@@ -80,7 +80,7 @@
 \end{center}
 \\
 Le principe de ce site? Réunir tout ce qui peux être important/intéressant à savoir lorsque l'on s'intéresse au naturisme. Et ce, autant pour la partie intéraction entre adeptes de ce mode de vie, qu'informations sur le sujet ou création/réservation de séjours. Afin de mener à bien ce projet, nous nous sommes grandement intéressé aux cahiers des charges fournit, mais plus précisément aux annexes, ainsi qu'au site déjà existant. Car pour retranscrire un site, qui reflète correctement ce que l'on veux, il faut d'abord comprendre les enjeux et la vision du demandeur. Ainsi nous avons décidé de réaliser un site assez épuré ou la majorité des fonctionnalités se trouvent sur la page d'accueil, accessible depuis un bandeau de haut de page. 
-Pour réaliser tout cela, nous avons donc utiliser plusieurs technologies, sur lesquelles on reviendra au moment ou parle de leurs utilisations, parmi elle on peux compter \textbf{Html}, \textbf{CSS}, \textbf{Js}, \textbf{PHP}, \textbf{DOM}, \textbf{AJAX} et \textbf{MYSQL}.
+Pour réaliser tout cela, nous avons donc utiliser plusieurs technologies, sur lesquelles on reviendra au moment où l'on parle de leurs utilisations, parmi elles on peux compter \textbf{Html}, \textbf{CSS}, \textbf{Js}, \textbf{PHP}, \textbf{DOM}, \textbf{AJAX} et \textbf{MYSQL}.
  \newpage
 	\
 	\
@@ -89,11 +89,11 @@ Pour réaliser tout cela, nous avons donc utiliser plusieurs technologies, sur le
 	\
 	\
 \section{Présentation du projet}
-Pour terminer ce projet, nous avons eu énormément de choses à mettre en place. Tout d'abord, le but premier du site Kunu est de mettre en avant le naturisme, et de créer un site où tout ce qui est nécessaire pour effectuer cela est possible. En effet, le site Kunu que nous avons mis en place permet de faire tout cela. Nous avons commencé à mettre en place un bloc " notre vision ", tiré du blog Kunukunu.org pour montrer dès l'accueil l'importance et l'interêt de cette pratique. Une seconde fonctionnalité qui a été implémenté est l'actualité. En effet, on s'est rendu compte que trouver des actualités récentes sur le naturisme n'est pas chose aisée. Ici tout est au même endroit.
+Pour terminer ce projet, nous avons eu énormément de choses à mettre en place. Tout d'abord, le but premier du site Kunu est de mettre en avant le naturisme, et de créer un site où tout ce qui est nécessaire pour effectuer cela est possible. En effet, le site Kunu que nous avons réalisé permet de faire tout cela. Nous avons commencé à mettre en place un bloc " notre vision ", tiré du blog Kunukunu.org pour montrer dès l'accueil l'importance et l'interêt de cette pratique. Une seconde fonctionnalité qui a été implémenté est l'actualité. En effet, on s'est rendu compte que trouver des actualités récentes sur le naturisme n'est pas chose aisée. Ici tout est au même endroit.
 \\
 \\
-Pour les actualités actuellement sur le site, tout comme la vision, elles ont été récupéré sur le blog actuel de Kunu. Nous avons aussi implémenté un calendrier pour les évènements à venir.
-Ensuite, le tchat est la partie qui nous a demandé le plus de temps, en effet on ne savait pas du tout comment mettre tout cela en place. Au final en combinant \textbf{AJAX} et \textbf{MYSQL} nous avons fini par faire quelque chose de pratique. Nous expliquerons plus en détail dans la partie réservée au tchat comment nous avons mis tout cela en place.
+Pour les actualités sur le site, tout comme la vision, elles ont été récupérées sur le blog actuel de Kunu. Nous avons aussi implémenté un calendrier pour les évènements à venir.
+Ensuite, le tchat est la partie qui nous a demandé le plus de temps, en effet on ne savait pas du tout comment mettre tout cela en place. Au final en combinant \textbf{AJAX} et \textbf{MYSQL} nous avons fini par faire quelque chose de pratique. Nous expliquerons plus en détail dans la partie réservée au tchat comment nous avons codé tout cela.
 \\
 \\
 Il reste donc la partie voyage, divisée entre réservation et création de séjour. Ces deux parties n'ont pas été les plus compliquées à faire, excepté la map. La map lors de la réservation à en effet prit plus de temps que prévu. Un des soucis qui reste est que pour trouver un endroit sur la map, il faut que l'adresse, le pays ainsi que le code postal soit bon, sinon cela ne fonctionne pas.
@@ -122,10 +122,10 @@ Nous avons donc fait les blocs suivants :
 
 \section{Choix technologique et design}
 
-Concernant le Design du site, nous voulions faire un site épuré, efficace et entièrement responsive. Pour cela, il fallut positionner chaque section du site de la même manière. Chaque page du site est définie de la même manière, sauf pour le menu "réservation" où il fallut faire autrement. Chaque section du site est donc défini par une taille de 100vh et une largeur de 100\%. En effet cela s'avère très pratique pour rendre le site responsive, car par défaut chaque section du site est définie en fonction de la largeur maximum de l'écran et selon la taille de l'écran. Cependant, rendre chaque section responsive, ne veut pas dire que le contenu de chaque section l'est. Tout d'abord il y a les contraintes de positionnement. Pour positionner chaque élément, nous avons choisis d'utiliser les FlexBox, plutôt que d'utiliser Bootstrap. Le travail n'est pas pour autant plus compliqué! 
+Concernant le Design du site, nous voulions faire un site épuré, efficace et entièrement responsive. Pour cela, il fallut positionner chaque section du site de la même manière. Chaque page du site est définie de la même manière, sauf pour le menu "réservation" où il fallut faire autrement. Chaque section du site est donc défini par une taille de 100vh et une largeur de 100\%. En effet cela s'avère très pratique pour rendre le site responsive, car par défaut chaque section du site est définie en fonction de la largeur maximum de l'écran et selon la taille de l'écran. Cependant, rendre chaque section responsive, ne veut pas dire que le contenu de chaque section l'est. Tout d'abord il y a les contraintes de positionnement. Pour positionner chaque élément, nous avons choisis d'utiliser les FlexBox, plutôt que d'utiliser Bootstrap. Le travail n'est pas pour autant plus facile ! 
 \\
 \\
-Après avoir appliqué un display: flex; à chaque section contenant des éléments, nous pouvions aisément centrer et positionner tout ce que l'on voulait qui se trouve à l'intérieur.
+Après avoir appliqué un display: flex; à chaque section contenant des éléments, nous pouvions aisément centrer et positionner tout ce que l'on voulait placer à l'intérieur.
 \\
 \begin{center}
  \includegraphics[scale=0.37]{img/design.jpeg}
@@ -455,7 +455,7 @@ Pour résumer, au cours de ce projet nous avons réussi à faire fonctionner toutes
 Ce projet fut bénéfique pour plusieurs points, tout d'abord et le plus important il nous a permis de nous familiariser avec les différents langages et outils que sont , le  \textbf{Html}, \textbf{CSS}, \textbf{Js}, \textbf{PHP}, \textbf{DOM}, \textbf{AJAX} et \textbf{MYSQL}, et plus généralement avec l'esprit du développement web. La mise en place du module Tchat était également difficile à implémenter et à réaliser, tout comme l'utilisation de la BDD pour les créations de compte et autres gestion de données mais nous nous y sommes habitué et cela nous a procuré un très bon entrainement.
 \\
 \\
-La répartition du travail a été très importante puisque le projet n'aurait jamais pu être fini sans nous pensions l'avoir répartie équitablement que ce soit au niveau de la difficulté et du temps. L'utilisation du Git a aussi été très utile, malgré le fait que nous l'utilisions déjà.
+La répartition du travail a été très importante puisque le projet n'aurait jamais pu être fini sans, de plus nous pensons l'avoir répartie équitablement que ce soit au niveau de la difficulté et du temps. L'utilisation du Git a aussi été très utile, malgré le fait que nous l'utilisions déjà.
 \\
 \\
 Finalement, nous avons implémenté toutes les pages de ce site pour que son développement à l'avenir sois le plus simple possible et prenne le moins de temps possible. Nous allons aussi sûrement présenter ce site dans notre "portefolio" pour le présenter lors de nos futurs recherches de stages.
