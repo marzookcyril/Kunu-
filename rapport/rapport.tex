@@ -79,7 +79,7 @@
  \includegraphics[scale=0.2]{img/Accueil.png}
 \end{center}
 \\
-Le principe de ce site? Réunir tout ce qui peux être important/intéressant a savoir lorsque l'on s'intéresse au naturisme. Et ce, autant pour la partie intéraction entre adepte de ce choix de vie, qu'information sur le sujet ou création/réservation de séjours. Afin de mener à bien ce projet, nous nous sommes grandement intéressé aux cahiers des charges fournit, mais plus précisément aux annexes, ainsi qu'au site déjà existant. Car pour retranscrire un site, qui reflète correctement ce que l'on veux, il faut d'abord comprendre les enjeux et la vision du demandeur. Ainsi nous avons décidé de réaliser un site assez épuré ou la majorité des fonctionnalités se trouvent sur la page d'accueil, accessible depuis un bandeau de haut de page. 
+Le principe de ce site? Réunir tout ce qui peux être important/intéressant à savoir lorsque l'on s'intéresse au naturisme. Et ce, autant pour la partie intéraction entre adeptes de ce mode de vie, qu'informations sur le sujet ou création/réservation de séjours. Afin de mener à bien ce projet, nous nous sommes grandement intéressé aux cahiers des charges fournit, mais plus précisément aux annexes, ainsi qu'au site déjà existant. Car pour retranscrire un site, qui reflète correctement ce que l'on veux, il faut d'abord comprendre les enjeux et la vision du demandeur. Ainsi nous avons décidé de réaliser un site assez épuré ou la majorité des fonctionnalités se trouvent sur la page d'accueil, accessible depuis un bandeau de haut de page. 
 Pour réaliser tout cela, nous avons donc utiliser plusieurs technologies, sur lesquelles on reviendra au moment ou parle de leurs utilisations, parmi elle on peux compter \textbf{Html}, \textbf{CSS}, \textbf{Js}, \textbf{PHP}, \textbf{DOM}, \textbf{AJAX} et \textbf{MYSQL}.
  \newpage
 	\
@@ -89,7 +89,7 @@ Pour réaliser tout cela, nous avons donc utiliser plusieurs technologies, sur le
 	\
 	\
 \section{Présentation du projet}
-Pour terminer ce projet, nous avons eu énormément de choses à mettre en place. Tout d'abord, le but premier du site Kunu est de mettre en avant le naturisme, et de créer un site où tout ce qui est nécessaire pour effectuer cela est possible. En effet, le site Kunu que nous avons mis en place permet de faire tout ça. Nous avons commencé à mettre en place un bloc " notre vision ", tiré du blog Kunukunu.org pour montrer des l'entrée l'importance et l'interêt de cette pratique. Une seconde fonctionnalité qui à été implémenté est l'actualité. En effet, on s'est rendu compte que trouver des actualités récentes sur le naturisme n'est pas chose aisée. Ici tout est au même endroit.
+Pour terminer ce projet, nous avons eu énormément de choses à mettre en place. Tout d'abord, le but premier du site Kunu est de mettre en avant le naturisme, et de créer un site où tout ce qui est nécessaire pour effectuer cela est possible. En effet, le site Kunu que nous avons mis en place permet de faire tout cela. Nous avons commencé à mettre en place un bloc " notre vision ", tiré du blog Kunukunu.org pour montrer dès l'accueil l'importance et l'interêt de cette pratique. Une seconde fonctionnalité qui a été implémenté est l'actualité. En effet, on s'est rendu compte que trouver des actualités récentes sur le naturisme n'est pas chose aisée. Ici tout est au même endroit.
 \\
 \\
 Pour les actualités actuellement sur le site, tout comme la vision, elles ont été récupéré sur le blog actuel de Kunu. Nous avons aussi implémenté un calendrier pour les évènements à venir.
@@ -108,7 +108,8 @@ Nous avons donc fait les blocs suivants :
 \item Calendrier,
 \item Tchat,
 \item Voyage,
-\item Boutique.
+\item Boutique,
+\item Mes infos.
 \end{itemize}
  \newpage
 	\
@@ -120,6 +121,40 @@ Nous avons donc fait les blocs suivants :
 
 
 \section{Choix technologique et design}
+
+Concernant le Design du site, nous voulions faire un site épuré, efficace et entièrement responsive. Pour cela, il fallut positionner chaque section du site de la même manière. Chaque page du site est définie de la même manière, sauf pour le menu "réservation" où il fallut faire autrement. Chaque section du site est donc défini par une taille de 100vh et une largeur de 100\%. En effet cela s'avère très pratique pour rendre le site responsive, car par défaut chaque section du site est définie en fonction de la largeur maximum de l'écran et selon la taille de l'écran. Cependant, rendre chaque section responsive, ne veut pas dire que le contenu de chaque section l'est. Tout d'abord il y a les contraintes de positionnement. Pour positionner chaque élément, nous avons choisis d'utiliser les FlexBox, plutôt que d'utiliser Bootstrap. Le travail n'est pas pour autant plus compliqué! 
+\\
+\\
+Après avoir appliqué un display: flex; à chaque section contenant des éléments, nous pouvions aisément centrer et positionner tout ce que l'on voulait qui se trouve à l'intérieur.
+\\
+\begin{center}
+ \includegraphics[scale=0.37]{img/design.jpeg}
+\end{center}
+\\
+Dans cet exemple, le contenu de la section se divise en 3 parties. La barre de discussion, la sous-section de texte à gauche et celle de droite. Tous 3, ayant un display: flex;.
+A l'intérieur de chaque section, les éléments peuvent être positionnés verticalement ou horizontalement, selon ce que l'on souhaite, grâce à la propriété flex-direction: grid ou flex-direction: column.
+Les espacements entre chaque éléments sont gérés grâce aux margin, permettant de positionner chaque élément par rapport à son élément parent ou voisin. 
+\\
+\\
+Dans l'ensemble, c'est de cette manière que l'intégralité du site est géré pour le positionnement des éléments. Cependant il peut y avoir des petites variations de codes selon les pages concernant le positionnement, selon ce que nous avions besoin de faire.
+\\
+
+ \newpage
+	\
+	\
+	\
+	\
+	\
+	\
+	\\
+	\\
+	
+Maintenant que chaque élément du contenu de la section était positionné, il fallait faire en sorte que sa taille s'adapte selon la taille de l'écran. Quoi de plus efficace et rapide que de faire agrandir ou rétrécir la taille des éléments selon la taille de l'écran, grâce à la mesure en vh. La notation vh (viewport height) défini la taille d'un élément en fonction de la taille de l'écran. Il existe aussi le vw (viewport width), homologue pour la largeur de l'écran, mais que nous utiliserons que très peu.
+\\
+\\
+Concernant les couleurs du site, tout tourne autour de 2 couleurs principales, un bleu/noir présent dans beaucoup de nos éléments, comme la Navbar/ Footer/ Contact, mais aussi du blanc. Tout cela vient du choix de faire un site vraiment épuré/ efficace et fonctionnel. Bien-sûr, chacun de ces choix sont purement personnels et entièrement modifiables très rapidement.
+
+
  \newpage
 	\
 	\
@@ -131,7 +166,7 @@ Nous avons donc fait les blocs suivants :
 
 \section{Description des pages}
 \subsection{Accueil}
-Voici ci-dessous la page d'accueil, celle sur laquelle on arriver dès que l'on s'est connecté.
+Voici ci-dessous la page d'accueil, celle sur laquelle on arrive dès que l'on se connecte.
 
 \\
 \begin{center}
@@ -151,7 +186,7 @@ Sur cette page là, un simple message " Bienvenue sur Kunu " extrêmement épuré. C
  \includegraphics[scale=0.3]{img/AccueilTel.png}
 \end{center}
 \\
-Nous parlions plus tôt des fonctionnalités accessible en parcourant la page, la première est le bloc "notre vision" où l'on peut retrouver notre point de vue sur le naturisme. Viennent ensuite les actualités. 
+Nous parlions plus tôt des fonctionnalités accessibles en parcourant la page, la première est le bloc "notre vision" où l'on peut retrouver notre point de vue sur le naturisme. Viennent ensuite les actualités. 
  \newpage
 	\
 	\
@@ -161,7 +196,7 @@ Nous parlions plus tôt des fonctionnalités accessible en parcourant la page, la 
 	\
 
 \subsection{Actualités}
-Pour cette partie là, nous avons décidé de remettre les actualités présentent sur le blog. Ainsi sur la page principale, on peut voir un titre, une photo et la date de l'actualité.
+Pour cette partie là, nous avons décidé de remettre les actualités présentes sur le blog. Ainsi sur la page principale, on peut voir un titre, une photo et la date de l'actualité en question.
 \\
 \begin{center}
  \includegraphics[scale=0.2]{img/Actualite.png}
@@ -184,7 +219,7 @@ Afin de mettre en place un calendrier, nous avons choisi l'API de Google agenda.
  \includegraphics[scale=0.2]{img/Calendrier.png}
 \end{center}
 \\
-Sur celle-ci , en enlevant les limites de droits pour chaque choses, il est possible d'y ajouter des événements visibles pour la totalité des utilisateurs. Cela permet à tout le monde d'être au courant de ce qu'il se passe dans les jours à venir. 
+Sur celle-ci , en enlevant les limites de droits pour chaque action, il est possible d'y ajouter des événements visibles pour la totalité des utilisateurs. Cela permet à tout le monde d'être au courant de ce qu'il se passe dans les jours à venir. Et donc d'avoir une communauté active.
 
  \newpage
 	\
@@ -201,7 +236,7 @@ La boutique à été légèrement plus complexe à implémenter puisque nous avions bes
  \includegraphics[scale=0.2]{img/Boutique.png}
 \end{center}
 \\
-Nous avons créé de faux articles, afin de pouvoir essayer de voir comment tout cela fonctionne. Pour cela, pas de page d'article à part, une page générale avec tout. Chaque article à son espace, avec le titre, l'image la description (dont le prix fait parti), et un bouton ajouter au panier. Il suffit de cliquer sur ce bouton pour actualiser la base de donnée, cela permet en effet de créer ou d'incrémenter la quantité d'un article pour l'utilisateur actuellement connecté. La suite se déroule dans le panier. 
+Nous avons créé de faux articles, afin de pouvoir essayer de voir comment tout cela fonctionne. Pour cela, pas de page d'article à part, une page générale avec tout ce qu'il faut. Chaque article à son espace, avec le titre, l'image la description (dont le prix fait parti), et un bouton ajouter au panier. Il suffit de cliquer sur ce bouton pour actualiser la base de donnée, cela permet en effet de créer ou d'incrémenter la quantité d'un article pour l'utilisateur actuellement connecté. La suite se déroule dans le panier. 
  \newpage
 	\
 	\
@@ -211,7 +246,7 @@ Nous avons créé de faux articles, afin de pouvoir essayer de voir comment tout c
 	\
 	
 \subsection{Panier}
-La panier, de base est parfaitement vide. Lorsque l'on ajoute un article depuis la boutique, un cadre "Votre panier" se créée, et se remplit des articles choisis. Évidemment, ajouter deux fois le même article permet simplement d'augmenter la quantité de l'article de un pas de doublons à l'affichage. Nous avons donc choisi de montrer ici, le nom de l'article, sa photo, sa quantité, et le prix adapté au nombre d'exemplaire voulu. Ainsi que le prix pour le total.
+La panier, de base est parfaitement vide. Lorsque l'on ajoute un article depuis la boutique, un cadre "Votre panier" se créé, et se remplit des articles choisis. Évidemment, ajouter deux fois le même article permet simplement d'augmenter la quantité de l'article et donc de ne pas avoir de doublons à l'affichage. Nous avons donc choisi de montrer ici, le nom de l'article, sa photo, sa quantité, et le prix adapté au nombre d'exemplaire voulu. Ainsi que le prix pour le total.
 \\
 \begin{center}
  \includegraphics[scale=0.2]{img/Panier.png}
@@ -247,7 +282,7 @@ Cette page là, bien que simple à comprendre est importante, elle se situe tout e
 	\
 	
 \subsection{Voyager}
-Cette partie la est divisée en deux parties que voici : 
+Cette partie la est divisée en deux parties que voici : 
 
 \\
 \begin{center}
@@ -265,7 +300,7 @@ Tout d'abord la création de séjour, pour se faire, nous avons besoin simplement 
 \item l'adresse complète.
 \end{itemize}
 \\
-Cette création de séjour est enregistrée dans une BDD, avec le nom de la personne qui à créer ce dernier. 
+Cette création de séjour est enregistrée dans une BDD, avec le nom de la personne qui a créé ce dernier. 
 \\
 \begin{center}
  \includegraphics[scale=0.2]{img/CreerSejour.png}
@@ -290,13 +325,13 @@ C'est ici que la réservation se fait comme montré ci-dessous cette page se divis
  \includegraphics[scale=0.18]{img/Sejour1.png}
 \end{center}
 \\
-On arrive sur une page, où l'on à accès a tous les séjours disponibles sur une liste déroulante, une fois que l'on veux plus d'info sur l'un d'entre eux, on le sélectionne dans cette même liste. Puis s'affichent toutes les informations relative à ce séjour.
+On arrive sur une page, où l'on a accès à tous les séjours disponibles sur une liste déroulante, une fois que l'on veux plus d'informations sur l'un d'entre eux, on le sélectionne dans cette même liste. Puis s'affichent toutes les informations relatives à ce séjour.
 \\
 \begin{center}
  \includegraphics[scale=0.18]{img/Sejour2.png}
 \end{center}
 \\
-On peux ensuite décider de voir sur la map, où cela se situe. Pour que la map fonctionne correctement, il faut que l'adresse complète soit correcte, y compris le code postal, sinon cela peux poser problème. Le pseudo du créateur est également afficher, si jamais on veut lui demander des infos supplémentaires. Dès que le choix est fait, il suffit d'écrire le titre du séjour, de rentrer la date de début, le temps et le nombre de personnes et la BDD sera mise à jour puis la réservation s'affichera dans "Mes informations".
+On peux ensuite décider de voir sur la map, où cela se situe. Pour que la map fonctionne correctement, il faut que l'adresse complète soit correcte, y compris le code postal, sinon cela peux poser problème. Le pseudo du créateur est également afficher, si jamais on a besoin d'informations supplémentaires. Dès que le choix est fait, il suffit d'écrire le titre du séjour, de rentrer la date de début, le temps et le nombre de personnes et la BDD sera mise à jour puis la réservation s'affichera dans "Mes informations".
  \newpage
 	\
 	\
@@ -318,7 +353,7 @@ Voici donc les 4 parties différentes incluses dans "mon compte", le panier à déj
  \includegraphics[scale=0.2]{img/Infos.png}
 \end{center}
 \\
-Le premier bloc est donc un résumé des informations concernant le compte connecté, évidemment ces infos sont modifiables via un bouton. Ensuite il y a deux blocs, séjours et réservations, identiques. Le premier résume les séjours que vous avez ajouter sur le site, le second ceux que vous avez réservé, avec toutes les infos y compris le prix. 
+Le premier bloc est donc un résumé des informations concernant le compte connecté, évidemment ces infos sont modifiables via un bouton. Ensuite il y a deux blocs, séjours et réservations, identiques. Le premier résume les séjours que vous avez ajoutés sur le site, le second ceux que vous avez réservés, avec toutes les informations y compris le prix. 
 \\
  \newpage
 	\
@@ -341,7 +376,7 @@ Les informations personelles sont dans une table de la BDD, où le mot de passe, 
 	\\
 	
 \subsubsection{Deconnexion}
-Le bouton déconnexion permet simplement de se déconnecté et revenir a la page de connexion, grâce au code suivant :
+Le bouton déconnexion permet simplement de se déconnecter et revenir à la page de connexion, grâce au code suivant :
 
 \\
 \begin{center}
@@ -367,13 +402,13 @@ La partie qui nous a prit le plus de temps, le tchat.
  \includegraphics[scale=0.37]{img/Tchat.png}
 \end{center}
 \\
-Le tchat est divisé en 3 parties, la première est une liste déroulante, où il suffit de choisir un interlocuteur, afin d'avoir accès à notre conversation avec celui-ci. Viens ensuite la partie discussion ou l'on voit, nos messages ainsi que les siens, anciens comme nouveaux messages qui arrivent sans avoir besoin de recharger la page. 
+Le tchat est divisé en 3 parties, la première est une liste déroulante, où il suffit de choisir un interlocuteur, afin d'avoir accès à notre conversation avec celui-ci. Viens ensuite la partie discussion où l'on voit, nos messages ainsi que les siens, anciens comme nouveaux messages qui arrivent sans avoir besoin de recharger la page. 
 \\
 \\
 Puis la partie où l'on tape le message et l'envoi. Voici un résumé rapide des méthodes que nous avons utilisé. Une BDD avec la totalité des messages, qui englobe l'envoyeur, le destinataire, le message ainsi qu'un ID unique. 
 \\
 \\
-Chaque nouveau message est envoyé dans la BDD. L'affichage se fait en regardant les messages entre les deux personnes, puis nous affichons ceux de notre destinataire a gauche, les nôtres à droite. Tout cet affichage est effectué grâce à AJAX. L'ordre des messages suit l'ordre des ID de la BDD ainsi, les plus vieux se retrouvent en haut de l'écran et les récents en bas.
+Chaque nouveau message est envoyé dans la BDD. L'affichage se fait en regardant les messages entre les deux personnes, puis nous affichons ceux de notre destinataire a gauche, les nôtres à droite. Tout cet affichage est effectué grâce à \textbf{AJAX}. L'ordre des messages suit l'ordre des ID de la BDD ainsi, les plus vieux se retrouvent en haut de l'écran et les récents en bas.
 
 
 
@@ -385,12 +420,12 @@ Chaque nouveau message est envoyé dans la BDD. L'affichage se fait en regardant 
 	\
 	\
 \section{Répartition des tâches}
-Au début du projet, nous voulions tous faire un peu de tout, sans forcément diviser le travail en fonction de nos préférences et en fonction du langage que l'on gère le mieux. On a ensuite rapidement constaté que cette méthode s'avérait trop longue et inefficace. De ce fait chacun a choisi la partie de code et le langage que préférions. Anthony s'est donc occupé du design avec le \textbf{CSS} en utilisant les flexbox et en faisant tout de lui même à la main sans Bootstrap. Il s'est donc occupé du FrontEnd. \\
+Au début du projet, nous voulions tous faire un peu de tout, sans forcément diviser le travail en fonction de nos préférences et en fonction du langage que l'on gère le mieux. On a ensuite rapidement constaté que cette méthode s'avérait trop longue et inefficace. De ce fait chacun a choisi la partie de code et le langage qu'il préférais. Anthony s'est donc occupé du design avec le \textbf{CSS} en utilisant les flexbox et en faisant tout de lui même à la main sans Bootstrap. Il s'est donc occupé du FrontEnd. \\
 \\
 Quant à Baptiste et Cyril, ils se sont occupés du BackEnd ensemble. La partie de prédilection de Baptiste était le \textbf{SQL}, il s'occupait donc de la partie base de donnée. Cyril, s'occupait de l'\textbf{Ajax} pour que l'on puisse afficher les informations en temps réel notamment pour le Tchat et les réservations.\\
 \\
-Ensuite, Cyril et Baptiste liait tout cela ensemble en s'occupant du \textbf{PHP} et une fois terminé, envoyait le tout à Anthony.
-Par la suite, la "magie" et Anthony mettait en forme le tout. Nous avons donc travaillé en décalé et c'est à ce moment que notre rendement a atteint son paroxysme. De plus, notre utilisation de \textbf{Gitlab} nous a permis de conserver toutes les versions de notre site et de pouvoir travailler en même temps notamment avec les différentes branches que nous avons créées.
+Ensuite, Cyril et Baptiste liaient tout cela ensemble en s'occupant du \textbf{PHP} et une fois terminé, envoyaient le tout à Anthony.
+Par la suite, la "magie" d'Anthony mettait en forme le tout. Nous avons donc travaillé en décalé et c'est à ce moment que notre rendement a atteint son paroxysme. De plus, notre utilisation de \textbf{Gitlab} nous a permis de conserver toutes les versions de notre site et de pouvoir travailler en même temps notamment avec les différentes branches que nous avons créées.
 
 \\
 \\
@@ -417,7 +452,7 @@ Finalement, voici un graphique montrant le temps que nous avons mis pour chaque 
 	\
 \section{Bilan et perspectives}
 Pour résumer, au cours de ce projet nous avons réussi à faire fonctionner toutes les différentes pages demandées, et à réaliser un site entièrement fonctionnel.
-Ce projet fut bénéfique pour plusieurs points, tout d?abord et le plus important il nous a permis de nous familiariser les différents langages que sont , le  \textbf{Html}, \textbf{CSS}, \textbf{Js}, \textbf{PHP}, \textbf{DOM}, \textbf{AJAX} et \textbf{MYSQL}, et plus généralement avec l'esprit du développement web. La mise en place du module Tchat était également difficile a mettre en place et à réaliser, tout comme l'utilisation de la BDD pour les créations de compte et autres gestion de données mais nous nous y sommes habitué et cela nous procuré un très bon entrainement.
+Ce projet fut bénéfique pour plusieurs points, tout d'abord et le plus important il nous a permis de nous familiariser avec les différents langages et outils que sont , le  \textbf{Html}, \textbf{CSS}, \textbf{Js}, \textbf{PHP}, \textbf{DOM}, \textbf{AJAX} et \textbf{MYSQL}, et plus généralement avec l'esprit du développement web. La mise en place du module Tchat était également difficile à implémenter et à réaliser, tout comme l'utilisation de la BDD pour les créations de compte et autres gestion de données mais nous nous y sommes habitué et cela nous a procuré un très bon entrainement.
 \\
 \\
 La répartition du travail a été très importante puisque le projet n'aurait jamais pu être fini sans nous pensions l'avoir répartie équitablement que ce soit au niveau de la difficulté et du temps. L'utilisation du Git a aussi été très utile, malgré le fait que nous l'utilisions déjà.
